@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-logo">
+            <div class="logo">
+                <img src="../assets/logo.png" alt="">
+            </div>
+            <div class="nav-name">Spotify</div>
+            <div class="nav-favourites">Favourites</div>
+        </div>
+        <div class="nav-left">
+            <input class="search-input" type="text" placeholder="Search">
+            <button>Search</button>
+            <i class="fa-solid fa-bell" style="color: #f9fafb;"></i>
+            <div class="profile"></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="sidebar-left">
+            <div class="sidebar-left-top">
+                <h3>Queue</h3>
+                <select class="queue-select">
+                    <option>Queue</option>
+                </select>
+            </div>
+            <div class="sidebar-left-bottom">
+                <div class="queues">
+                    <div class="queues-img">
+                        <p>01</p>
+                        <img src="../assets/calm-down.webp" alt="">
+                    </div>
+                    <div class="heart">
+                        <h5>Calm Down</h5><i class="fa-regular fa-heart" style="color: #f9fafb;"></i>
+                    </div>
+                </div>
+                <div class="queues">
+                    <div class="queues-img">
+                        <p>02</p>
+                        <img src="../assets/teri-aadat-2.webp" alt="">
+                    </div>
+                    <div class="heart">
+                        <h5>Teri Aadat 2</h5><i class="fa-regular fa-heart" style="color: #f9fafb;"></i>
+                    </div>
+                </div>
+                <div class="queues">
+                   <div class="queues-img">
+                    <p>03</p>
+                    <img src="../assets/raabta.webp" alt="">
+                   </div> 
+                    <div class="heart">
+                        <h5>Raabta</h5><i class="fa-regular fa-heart" style="color: #f9fafb;"></i>
+                    </div>
+                </div>
+                <div class="queues">
+                   <div class="queues-img">
+                    <p>04</p>
+                    <img src="../assets/starboy.webp" alt="">
+                   </div>
+                    <div class="heart">
+                        <h5>Starboy</h5><i class="fa-regular fa-heart" style="color: #f9fafb;"></i>
+                    </div>
+                </div>
+                <div class="queues">
+                   <div class="queues-img">
+                    <p>05</p>
+                    <img src="../assets/rishta-rishta.webp" alt="">
+                   </div> 
+                    <div class="heart">
+                        <h5>Rishta Rishta</h5><i class="fa-regular fa-heart" style="color: #f9fafb;"></i>
+                    </div>
+                </div>
+                <div class="queues">
+                    <div class="queues-img">
+                        <p>06</p>
+                        <img src="../assets/nasha.webp" alt="">
+                    </div>
+                    <div class="heart">
+                        <h5>Nasha</h5><i class="fa-regular fa-heart" style="color: #f9fafb;"></i>
+                    </div>
+                </div>
+                <div class="queues">
+                    <div class="queues-img">
+                        <p>07</p>
+                        <img src="../assets/heat-waves.webp" alt="">
+                    </div>
+                    <div class="heart">
+                        <h5>Heat Waves</h5><i class="fa-regular fa-heart" style="color: #f9fafb;"></i>
+                    </div>
+                </div>
+                <div class="queues">
+                   <div class="queues-img">
+                    <p>08</p>
+                    <img src="../assets/bones.webp" alt="">
+                   </div> 
+                    <div class="heart">
+                        <h5>Bones</h5><i class="fa-regular fa-heart" style="color: #f9fafb;"></i>
+                    </div>
+                </div>
+                <div class="queues">
+                   <div class="queues-img">
+                    <p>09</p>
+                    <img src="../assets/ve-fukrey.webp" alt="">
+                   </div>
+                    <div class="heart">
+                        <h5>Ve Fukrey</h5><i class="fa-regular fa-heart" style="color: #f9fafb;"></i>
+                    </div>
+                </div>
+                <div class="queues">
+                   <div class="queues-img">
+                    <p>10</p>
+                    <img src="../assets/unstoppable.webp" alt="">
+                   </div>
+                    <div class="heart">
+                        <h5>unstoppable</h5><i class="fa-regular fa-heart" style="color: #f9fafb;"></i>
+                    </div>
+                </div>
+                <div class="queues">
+                   <div class="queues-img">
+                    <p>11</p>
+                    <img src="../assets/baby.webp" alt="">
+                   </div>
+                    <div class="heart">
+                        <h5>baby</h5><i class="fa-regular fa-heart" style="color: #f9fafb;"></i>
+                    </div>
+                </div>
+                <div class="queues">
+                   <div class="queues-img">
+                    <p>12</p>
+                    <img src="../assets/jaane-jaa.webp" alt="">
+                   </div>
+                    <div class="heart">
+                        <h5>Jaane Jaa</h5><i class="fa-regular fa-heart" style="color: #f9fafb;"></i>
+                    </div>
+                </div>
+                <div class="queues">
+                  <div class="queues-img">
+                    <p>13</p>
+                    <img src="../assets/unholy.webp" alt="">
+                  </div>
+                  <div class="heart">
+                    <h5>Unholy</h5><i class="fa-regular fa-heart" style="color: #f9fafb;"></i>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-right">
+            <div class="sidebar-right-top">
+                <img class="favourites-img" src="../assets/ve-fukrey.webp" alt="">
+                <img class="favourites-img" src="../assets/teri-aadat-2.webp" alt="">
+                <img class="favourites-img" src="../assets/baby.webp" alt="">
+                <img class="favourites-img favourites-img1" src="../assets/unholy.webp" alt="">
+            </div>
+            <div class="sidebar-right-main1">
+                <h1>Latest Release</h1>
+                <div class="latest-release">
+                    <div class="inner-latest">
+                        <div class="latest-img">
+                            <img src="../assets/bones.webp" alt="">
+                            <i class="fa-solid fa-play" style="color: rgb(235, 56, 43);"></i>
+                        </div>
+                        <div class="latest-content">
+                            <div><p>Bones<br>Aug 11, 2017</p></div>
+                            <div class="content-p"><p>...<br>3:56 min</p></div>
+                        </div>
+                    </div>
+                    <div class="inner-latest">
+                        <div class="latest-img">
+                            <img src="../assets/iss-dil-ko.webp" alt="">
+                            <i class="fa-solid fa-play" style="color: rgb(235,56,43);"></i>
+                        </div>
+                        <div class="latest-content">
+                            <div><p>Iss Dil Ko<br>Aug 11, 2017</p></div>
+                            <div class="content-p"><p>...<br>4:50 min</p></div>
+                        </div>
+                    </div>
+                    <div class="inner-latest">
+                        <div class="latest-img">
+                            <img src="../assets/judaiyaan.webp" alt="">
+                            <i class="fa-solid fa-play" style="color: rgb(235,56,43);"></i>
+                        </div>
+                        <div class="latest-content">
+                            <div><p>judaiyaan<br>Aug 11, 2017</p></div>
+                            <div class="content-p"><p>...<br>5:53 min</p></div>
+                        </div>
+                    </div>
+                    <div class="inner-latest">
+                        <div class="latest-img">
+                            <img src="../assets/jaane-jaa.webp" alt="">
+                            <i class="fa-solid fa-play" style="color: rgb(235,56,43);"></i>
+                        </div>
+                        <div class="latest-content">
+                            <div><p>Jaane Jaa<br>Aug 11, 2017</p></div>
+                            <div class="content-p"><p>...<br>5:03 min</p></div>
+                        </div>
+                    </div>
+                    <div class="inner-latest">
+                        <div class="latest-img">
+                            <img src="../assets/khoobsurat.webp" alt="">
+                            <i class="fa-solid fa-play" style="color: rgb(235,56,43);"></i>
+                        </div>
+                        <div class="latest-content">
+                            <div><p>Khoobsurat<br>Aug 11, 2017</p></div>
+                            <div class="content-p"><p>...<br>1:56 min</p></div>
+                        </div>
+                    </div>
+                    <div class="inner-latest">
+                        <div class="latest-img">
+                            <img src="../assets/kaafi-hain.webp" alt="">
+                            <i class="fa-solid fa-play" style="color: rgb(235,56,43);"></i>
+                        </div>
+                        <div class="latest-content">
+                            <div><p>Kaafi Hain<br>Aug 11, 2017</p></div>
+                            <div class="content-p"><p>...<br>7:19 min</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-right-main2">
+                <h1>Popular Artists</h1>
+                <div class="popular-artists">
+                    <div class="artists artists1">
+                        <div class="artists-img"><img src="../assets/justin-bieber.webp" alt=""></div>
+                        <div class="artists-p"><p>Justin Bieber</p></div>
+                    </div>
+                    <div class="artists">
+                        <div class="artists-img"><img src="../assets/prateek-kuhad.webp" alt=""></div>
+                        <div class="artists-p"><p>Prateek Kuhad</p></div>
+                    </div>
+                    <div class="artists">
+                        <div class="artists-img"><img src="../assets/reena-gilbert.webp" alt=""></div>
+                        <div class="artists-p"><p>Reena Gilbert</p></div>
+                    </div>
+                    <div class="artists">
+                        <div class="artists-img"><img src="../assets/lucky-ali.webp" alt=""></div>
+                        <div class="artists-p"><p>Lucky Ali</p></div>
+                    </div>
+                    <div class="artists">
+                        <div class="artists-img"><img src="../assets/julia michaels.webp" alt=""></div>
+                        <div class="artists-p"><p>Julia Michaels</p></div>
+                    </div>
+                    <div class="artists">
+                        <div class="artists-img"><img src="../assets/ariana-grande.webp" alt=""></div>
+                        <div class="artists-p"><p>Ariana Grande</p></div>
+                    </div>
+                    <div class="artists">
+                        <div class="artists-img"><img src="../assets/nikita-gandhi.webp" alt=""></div>
+                        <div class="artists-p"><p>Nikita Gandhi</p></div>
+                    </div>
+                    <div class="artists">
+                        <div class="artists-img"><img src="../assets/preet-aulakh.webp" alt=""></div>
+                        <div class="artists-p"><p>Preet Aulakh</p></div>
+                    </div>
+                    <div class="artists">
+                        <div class="artists-img"><img src="../assets/bill-malina.webp" alt=""></div>
+                        <div class="artists-p"><p>Bill Malina</p></div>
+                    </div>
+                    <div class="artists">
+                        <div class="artists-img"><img src="../assets/daddy-yankee.webp" alt=""></div>
+                        <div class="artists-p"><p>Daddy Yankee</p></div>
+                    </div>
+                    <div class="artists artists2">
+                        <div class="artists-img"><img src="../assets/daniel-caesar.webp" alt=""></div>
+                        <div class="artists-p"><p>Daniel Caesar</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-right-main3">
+                <div class="outer-populer-music">
+                    <div class="outer-music-logo">
+                        <div class="music-logo">
+                            <img src="../assets/music1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="popular-music">
+                        <div class="music">
+                            <div class="music-img"><img src="../assets/preet-aulakh.webp" alt=""></div>
+                        </div>
+                        <div class="music">
+                            <div class="music-img"><img src="../assets/prateek-kuhad.webp" alt=""></div>
+                        </div>
+                        <div class="music">
+                            <div class="music-img"><img src="../assets/daddy-yankee.webp" alt=""></div>
+                        </div>
+                        <div class="music">
+                            <div class="music-img"><img src="../assets/justin-bieber.webp" alt=""></div>
+                        </div>
+                        <div class="music">
+                            <div class="music-img"><img src="../assets/nikita-gandhi.webp" alt=""></div>
+                        </div>
+                        <div class="music">
+                            <div class="music-img"><img src="../assets/reena-gilbert.webp" alt=""></div>
+                        </div>
+                        <div class="music">
+                            <div class="music-img"><img src="../assets/max-martins.webp" alt=""></div>
+                        </div>
+                        <div class="music">
+                            <div class="music-img"><img src="../assets/ed-sheeran.webp" alt=""></div>
+                        </div>
+                        <div class="music">
+                            <div class="music-img"><img src="../assets/julia michaels.webp" alt=""></div>
+                        </div>
+                        <div class="music">
+                            <div class="music-img"><img src="../assets/lucky-ali.webp" alt=""></div>
+                        </div>
+                        <div class="music music1">
+                            <div class="music-img"><img src="../assets/daniel-caesar.webp" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="sidebar-right-main4">
+                <h1>Latest English</h1>
+                <div class="latest-english">
+                    <div class="english">
+                        <img src="../assets/baby.webp" alt="">
+                        <p>Baby<br>Aug 11, 2017</p>
+                    </div>
+                    <div class="english">
+                        <img src="../assets/bones.webp" alt="">
+                        <p>Bones<br>Aug 11, 2017</p>
+                    </div>
+                    <div class="english">
+                        <img src="../assets/let-me-down-slowly.webp" alt="">
+                        <p>Let me down<br>Aug 11, 2017</p>
+                    </div>
+                    <div class="english">
+                        <img src="../assets/let-me-love-you.webp" alt="">
+                        <p>let me love<br>Aug 11, 2017</p>
+                    </div>
+                    <div class="english">
+                        <img src="../assets/unholy.webp" alt="">
+                        <p>Unholy<br>Aug 11, 2017</p>
+                    </div>
+                    <div class="english">
+                        <img src="../assets/unstoppable.webp" alt="">
+                        <p>Unstoppable<br>Aug 11, 2017</p>
+                    </div>
+                    <div class="english">
+                        <img src="../assets/people.webp" alt="">
+                        <p>People<br>Aug 11, 2017</p>
+                    </div>
+                    <div class="english">
+                        <img src="../assets/heat-waves.webp" alt="">
+                        <p>Heat Waves<br>Aug 11, 2017</p>
+                    </div>
+                    <div class="english">
+                        <img src="../assets/gasolina.webp" alt="">
+                        <p>Gasolina<br>Aug 11, 2017</p>
+                    </div>
+                    <div class="english english1">
+                        <img src="../assets/starboy.webp" alt="">
+                        <p>Starboy<br>Aug 11, 2017</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-right-main5">
+                <h1>Latest Hindi</h1>
+                <div class="latest-hindi">
+                    <div class="hindi">
+                        <img src="../assets/jaane-jaa.webp" alt="">
+                        <p>Jaane Jaa<br>Aug 11, 2017</p>
+                    </div>
+                    <div class="hindi">
+                        <img src="../assets/judaiyaan.webp" alt="">
+                        <p>Judaiyaan<br>Aug 11, 2017</p>
+                    </div>
+                    <div class="hindi">
+                        <img src="../assets/iss-dil-ko.webp" alt="">
+                        <p>Iss Dil Ko<br>Aug 11, 2017</p>
+                    </div>
+                    <div class="hindi">
+                        <img src="../assets/kasam-se.webp" alt="">
+                        <p>Kasam Se<br>Aug 11, 2017</p>
+                    </div>
+                    <div class="hindi">
+                        <img src="../assets/raabta.webp" alt="">
+                        <p>Raabta<br>Aug 11, 2017</p>
+                    </div>
+                    <div class="hindi">
+                        <img src="../assets/tu-saath-hai.webp" alt="">
+                        <p>Tu Saath Hai<br>Aug 11, 2017</p>
+                    </div>
+                    <div class="hindi">
+                        <img src="../assets/barsaat-aa-gayi.webp" alt="">
+                        <p>Barsaat<br>Aug 11, 2017</p>
+                    </div>
+                    <div class="hindi">
+                        <img src="../assets/teri-aadat-2.webp" alt="">
+                        <p>Teri Aadat 2<br>Aug 11, 2017</p>
+                    </div>
+                    <div class="hindi">
+                        <img src="../assets/simroon-tera-naam.webp" alt="">
+                        <p>Tera Naam<br>Aug 11, 2017</p>
+                    </div>
+                    <div class="hindi hindi1">
+                        <img src="../assets/rishta-rishta.webp" alt="">
+                        <p>Rishta Rishta<br>Aug 11, 2017</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

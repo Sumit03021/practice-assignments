@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+           <div class="nav-in">
+             <div class="nav-logo"></div>
+             <h2 style="font-size: 16px">.in</h2>
+            </div>
+           
+            <div class="nav-location">
+                <p class="hello">Hello,</p>
+                <div class="nav-address">
+                    <div class="add-icon">
+                        <i class="fa-solid fa-location-dot" style="color: #fcfcfd;"></i>
+                    </div>
+                    <p class="address">Select your address</p>
+                </div>
+            </div>
+            <div class="search">
+                <select class="all">
+                    <option>All</option>
+                </select>
+                <input class="search-input" type="text" placeholder="Search Amazon.in">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #0b0c0f;"></i>
+                </div>
+            </div>
+            <div class="language">
+                <div class="india"></div>
+                <p class="english">EN</p>
+                <i class="fa-solid fa-caret-down" style="color: #f5f5f5;"></i>
+            </div>
+            <div class="nav-signin">
+                <a href=""> <span class="navline1">Hello, sign in</span> <br>
+                    <span class="navline2">Account & Lists</span></a>
+                <i class="nav-arrow fa-solid fa-caret-down" style="color: #f5f5f5;"></i>
+            </div>
+            <div class="nav-returns">
+                <a href="" class="navlink-returns">
+                    <span class="navline1">Returns</span><br>
+                    <span class="navline2">& Orders</span>
+                </a>
+            </div>
+            <div class="nav-cart">
+                <div class="cart-count">
+                    <h3>0</h3>
+                </div>
+                
+                <div><span>
+                    <i class="fa-solid fa-cart-shopping fa-xl" style="color: #f6f7f9;"></i>
+                    </span>
+                    <span class="navline2">Cart</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="nav-panel">
+            <div class="nav-panel-all"  id="open-nav-sidebar">
+                <i class="fa-solid fa-bars" style="color: #f2f2f3;"></i>
+                <div class="nav-all">All</div>
+            </div>
+            <div class="nav-panel-ops">
+                <ul>
+                    <li><a href="">Amazon miniTV</a></li>
+                    <li><a href="">Sell</a></li>
+                    <li><a href="">Best Sellers</a></li>
+                    <li><a href="">Today's Deals</a></li>
+                    <li><a href="">Mobiles</a></li>
+                    <li><a href="">New Releases</a></li>
+                    <li><a href="">Customer Services</a></li>
+                    <li class="prime-image-hover">
+                        <a href="" >Prime</a>
+                        <div class="prime-image">
+                            <div class="img"></div>
+                        </div>
+                    </li>
+                    <li><a href="">Electronics</a></li>
+                </ul>
+            </div>
+            <div class="nav-launches">
+                New Launches from Mobiles,Electronis & more | Shop Now
+            </div>
+        </div>
+        <div class="sidebar-container" id="sidebar-show">
+          <div class="sidebar-left">
+            <div class="sidebar-top">
+                <i class="fa-solid fa-circle-user fa-xl"></i>
+                <h2>Hello, <span>sign in</span></h2>
+            </div>
+            <div class="sidebar-wrap">
+                <div class="sidebar-item">
+                    <h2>Trending</h2>
+                    <p>Best Sellers</p>
+                    <p>New Releases</p>
+                    <p>Movers and Shakers</p>
+                </div>
+                <div class="sidebar-item">
+                    <h2>Digital Content And Devices</h2>
+                    <p>Amazon miniTV-FREE entertainment</p>
+                    <p>Echo & Alexa</p>
+                    <p>Fire TV</p>
+                    <p>Kindle E-Readers & eBooks</p>
+                    <p>Audible Audioboks</p>
+                    <p>Amazon Prime Video</p>
+                    <p>Amazon Prime Music</p>
+                </div>
+                <div class="sidebar-item">
+                    <h2>Shop By Categories</h2>
+                    <p>Mobiles, Computers</p>
+                    <p>TV, Appliances, Electronis</p>
+                    <p>Men's Fashions</p>
+                    <p>Women's Fashions</p>
+                    <p>See All</p>
+                </div>
+                <div class="sidebar-item">
+                    <h2>Programs & Features</h2>
+                    <p>Gift Cards & Mobile Recharges</p>
+                    <p>Amazon Launchpad</p>
+                    <p>Flight Tickets</p>
+                    <p>Clearance Stores</p>
+                </div>
+                <div class="sidebar-item">
+                    <h2>Helps & Settings</h2>
+                    <p>Your Accounts</p>
+                    <p>Customer Service</p>
+                    <p>Sign in</p>
+                </div>
+            </div>
+        </div>
+          <div id="sidebar-close">
+            <i class="fa-regular fa-circle-xmark" style="color: #edeff3;"></i>
+          </div>
+        </div>
+        <section>
+            <div class="image-container">
+                <div class="image-list">
+                    <div class="image-item1 image-item"></div>
+                    <div class="image-item2 image-item"></div>
+                    <div class="image-item3 image-item"></div>
+                    <div class="image-item4 image-item"></div>
+                    <div class="image-item5 image-item"></div>
+                    <div class="image-item6 image-item"></div>
+                </div>
+                <div class="image-btn-container">
+                    <button class="btn-slider" id="slide-btn-left"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="btn-slider" id="slide-btn-right"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="box-section">
+            <div class="box box1 boxps">
+                <h2>Bluetooth Calling Smartwatch Starts at &#8377 1,999</h2>
+                <div class="inner-box1 box1-img1"></div>
+                <div class="box-shop"><a class="anchor-shop" href="">Shop Now</a></div>
+            </div>
+            <div class="box box2 boxps">
+                <h2>Up to 60% off | Styles for men</h2>
+                <div class="inner-box2">
+                    <div class="inner-box">
+                        <div class="inner-img box2-img1"></div>
+                        <a class="anchor-content" href="">Clothing</a>
+                    </div>
+                    <div class="inner-box">
+                        <div class="inner-img box2-img2"></div>
+                        <a class="anchor-content" href="">Footwear</a>
+                    </div>
+                    <div class="inner-box">
+                        <div class="inner-img box2-img3"></div>
+                        <a class="anchor-content" href="">Watches</a>
+                    </div>
+                    <div class="inner-box">
+                        <div class="inner-img box2-img4"></div>
+                        <a class="anchor-content" href="">Bags & luggage</a>
+                    </div>
+                </div>
+                <div class="box-shop"><a class="anchor-shop" href="">See all offers</a></div>
+            </div>
+            <div class="box box3 boxps">
+                <h2>Appliances for your home | &nbsp &nbsp Up to 55% off</h2>
+                <div class="inner-box2">
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box3-img1"></div>
+                        <a class="anchor-content" href="">Clothing</a>
+                    </div>
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box3-img2"></div>
+                        <a class="anchor-content" href="">Footwear</a>
+                    </div>
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box3-img3"></div>
+                        <a class="anchor-content" href="">Watches</a>
+                    </div>
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box3-img4"></div>
+                        <a class="anchor-content" href="">Bags & luggage</a>
+                    </div>
+                </div>
+                <div class="box-shop"><a class="anchor-shop" href="">See all offers</a></div>
+            </div>
+           
+            <div class="box4 boxps">
+                <div class="brand-box">
+                    <div class="laptop-brand"></div>
+                </div>
+                <div class="sign-box">
+                    <div class="sign-box1">
+                        <h2>Sign in for your best experience</h2>
+                    </div>
+                    <div class="sign-box2">
+                        <button class="sign-btn"> <a class="anchor-content" href="">Sign in securely</a> </button>
+                    </div>
+                </div>  
+            </div>
+            
+            <div class="box box5">
+                <h2>Up to 60% off | Styles for &nbsp &nbsp &nbsp &nbsp women</h2>
+                <div class="inner-box2">
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box5-img1"></div>
+                        <a class="anchor-content" href="">women's Clothing</a>
+                    </div>
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box5-img2"></div>
+                        <a class="anchor-content" href="">Footwear+Handbags</a>
+                    </div>
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box5-img3"></div>
+                        <a class="anchor-content" href="">Watches</a>
+                    </div>
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box5-img4"></div>
+                        <a class="anchor-content" href="">Fashion jewellery</a>
+                    </div>
+                </div>
+                <div class="box-shop"><a class="anchor-shop" href="">See all offers</a></div>
+            </div>
+            <div class="box box6">
+                <h2>Starting &#8377 99 | All your home improvement needs</h2>
+                <div class="inner-box2">
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box6-img1"></div>
+                        <a class="anchor-content" href="">Spin mops, wipes & more</a>
+                    </div>
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box6-img2"></div>
+                        <a class="anchor-content" href="">Bathroom hardware & accessories</a>
+                    </div>
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box6-img3"></div>
+                        <a class="anchor-content" href="">Hammers, screwdrivers & more</a>
+                    </div>
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box6-img4"></div>
+                        <a class="anchor-content" href="">Extension boards, plugs & more</a>
+                    </div>
+                </div>
+                <div class="box-shop"><a class="anchor-shop" href="">Explore all</a></div>
+            </div>
+            <div class="box box7">
+                <h2>Revamp your home in style</h2>
+                <div class="inner-box2">
+                    <div class="inner-box">
+                        <div class="inner-img box7-img1"></div>
+                        <a class="anchor-content" href="">Bedsheets, curtains & more</a>
+                    </div>
+                    <div class="inner-box">
+                        <div class="inner-img box7-img2"></div>
+                        <a class="anchor-content" href="">Home decoration</a>
+                    </div>
+                    <div class="inner-box">
+                        <div class="inner-img box7-img3"></div>
+                        <a class="anchor-content" href="">Home storage</a>
+                    </div>
+                    <div class="inner-box">
+                        <div class="inner-img box7-img4"></div>
+                        <a class="anchor-content" href="">Lighting solutions</a>
+                    </div>
+                </div>
+                <div class="box-shop"><a class="anchor-shop" href="">Explore all</a></div>
+            </div>
+            <div class="box box8">
+                <h2>Automotive essentials | Up to &nbsp 60% off</h2>
+                <div class="inner-box2">
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box8-img1"></div>
+                        <a class="anchor-content" href="">Cleaning accessories</a>
+                    </div>
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box8-img2"></div>
+                        <a class="anchor-content" href="">Tyre & rim cares</a>
+                    </div>
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box8-img3"></div>
+                        <a class="anchor-content" href="">Helmets</a>
+                    </div>
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box8-img4"></div>
+                        <a class="anchor-content" href="">Vaccum cleaner</a>
+                    </div>
+                </div>
+                <div class="box-shop"><a class="anchor-shop" href="">See more</a></div>
+            </div>
+            <div class="boxlg boxlg1">
+               <div class="large-heading">
+                <h2>Today's Deals</h2>
+                <a href="" class="anchor-shop">See All deals</a>
+               </div>
+               <div class="deals-icon">
+                   <div class="deals-btn">
+                     <button id="deals-btn-left" onclick="goPrev()" class= "deals-btn-slider"><i class="fa-solid fa-chevron-left"></i></button>
+                     <button id="deals-btn-right" onclick="goNext()" class= "deals-btn-slider"><i class="fa-solid fa-chevron-right"></i></button>
+                   </div> 
+                   <div class="outer-imglg">
+                    <div class="imglg">
+                        <div class="inner-imglg imglg1"></div>
+                        <div class="inner-imghd"></div>
+                    </div>
+                  </div>
+                  <div class="outer-imglg">
+                    <div class="imglg">
+                        <div class="inner-imglg imglg2"></div>
+                        <div class="inner-imghd"></div>
+                      </div>
+                  </div>
+                  <div class="outer-imglg">
+                    <div class="imglg">
+                        <div class="inner-imglg imglg3"></div>
+                        <div class="inner-imghd"></div>
+                      </div>
+                  </div>
+                  <div class="outer-imglg">
+                    <div class="imglg">
+                        <div class="inner-imglg imglg4"></div>
+                        <div class="inner-imghd"></div>
+                      </div>
+                  </div>
+                  <div class="outer-imglg">
+                    <div class="imglg">
+                        <div class="inner-imglg imglg5"></div>
+                        <div class="inner-imghd"></div>
+                      </div>
+                  </div>
+                  <div class="outer-imglg">
+                    <div class="imglg">
+                        <div class="inner-imglg imglg6"></div>
+                        <div class="inner-imghd"></div>
+                      </div>
+                  </div>
+                  <div class="outer-imglg">
+                    <div class="imglg">
+                        <div class="inner-imglg imglg7"></div>
+                        <div class="inner-imghd"></div>
+                      </div>
+                  </div>
+                  <div class="outer-imglg">
+                    <div class="imglg">
+                        <div class="inner-imglg imglg8"></div>
+                        <div class="inner-imghd"></div>
+                      </div>
+                  </div>
+                  <div class="outer-imglg">
+                    <div class="imglg">
+                        <div class="inner-imglg imglg9"></div>
+                        <div class="inner-imghd"></div>
+                      </div>
+                  </div>
+                  <div class="outer-imglg">
+                    <div class="imglg">
+                        <div class="inner-imglg imglg10"></div>
+                        <div class="inner-imghd"></div>
+                      </div>
+                  </div>
+                  <div class="outer-imglg">
+                    <div class="imglg">
+                        <div class="inner-imglg imglg11"></div>
+                        <div class="inner-imghd"></div>
+                      </div>
+                  </div>
+                  <div class="outer-imglg">
+                    <div class="imglg">
+                        <div class="inner-imglg imglg12"></div>
+                        <div class="inner-imghd"></div>
+                      </div>
+                  </div>
+                  <div class="outer-imglg">
+                    <div class="imglg">
+                        <div class="inner-imglg imglg13"></div>
+                        <div class="inner-imghd"></div>
+                      </div>
+                  </div>
+                  <div class="outer-imglg">
+                    <div class="imglg">
+                        <div class="inner-imglg imglg14"></div>
+                        <div class="inner-imghd"></div>
+                      </div>
+                  </div>
+                  <div class="outer-imglg">
+                    <div class="imglg">
+                        <div class="inner-imglg imglg15"></div>
+                        <div class="inner-imghd"></div>
+                      </div>
+                  </div>
+                  <div class="outer-imglg">
+                    <div class="imglg">
+                        <div class="inner-imglg imglg16"></div>
+                        <div class="inner-imghd"></div>
+                      </div>
+                  </div>
+               </div>
+            </div>
+            <div class="boxlg boxlg2"></div>
+            <div class="boxlg boxlg3"></div>
+            <div class="box box9">
+                <h2>Keep shopping for</h2>
+                <div class="inner-box-md">
+                    <div class="inner-box">
+                        <div class="box9-img1"></div>
+                        <a class="anchor-content" href="">Western Digital WD</a><br>
+                        <div><a class="anchor-content1" href="">&#8377 6,799<span class="span-content1">00</span> </a></div>
+                    </div>
+                    <div class="inner-box">
+                        <div class="box9-img2"></div>
+                        <a class="anchor-content" href="">Seagate Expansion</a><br>
+                        <div><a class="anchor-content1" href="">&#8377 6,649<span class="span-content1">00</span> </a></div>
+                    </div>
+                    <div class="inner-box">
+                        <div class="box9-img3"></div>
+                        <a class="anchor-content" href="">Gizga Essentials</a><br>
+                      <div><a class="anchor-content1" href="">&#8377 249<span class="span-content1">00</span> </a></div>  
+                    </div>
+                    <div class="inner-box">
+                        <div class="box9-img4"></div>
+                        <a class="anchor-content" href="">Toshiba Canvio</a><br>
+                      <div><a class="anchor-content1" href="">&#8377 5,729<span class="span-content1">00</span> </a></div>  
+                    </div>
+                </div>
+            </div>
+            <div class="box box10">
+                <h2>Bestselling Smartwatch Starts at &#8377 999</h2>
+                <div class="inner-box1 box10-img1"></div>
+                <div class="box-shop"><a class="anchor-shop" href="">Shop Now</a></div>
+            </div>
+            </div>
+            <div class="box box11">
+                <h2>Offers on travel tickets</h2>
+                <div class="inner-box2">
+                    <div class="inner-box">
+                        <div class="inner-img box11-img1"></div>
+                        <a class="anchor-content" href="">Limited Period Offer | Up to 17% off</a>
+                    </div>
+                    <div class="inner-box">
+                        <div class="inner-img box11-img2"></div>
+                        <a class="anchor-content" href="">Zero gateway fees on trains</a>
+                    </div>
+                    <div class="inner-box">
+                        <div class="inner-img box11-img3"></div>
+                        <a class="anchor-content" href="">Bus ticket bookings</a>
+                    </div>
+                    <div class="inner-box">
+                        <div class="inner-img box11-img4"></div>
+                        <a class="anchor-content" href="">Products for your travel needs</a>
+                    </div>
+                </div>
+                <div class="box-shop"><a class="anchor-shop" href="">See all offers</a></div>
+            </div>
+            <div class="box box12">
+                <h2>Up to 60% off | Outdoor & &nbsp sports toys</h2>
+                <div class="inner-box2">
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box12-img1"></div>
+                        <a class="anchor-content" href="">Inflatable pools | Starting &#8377 399</a>
+                    </div>
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box12-img2"></div>
+                        <a class="anchor-content" href="">Blasters & toy guns | Starting &#8377 170</a>
+                    </div>
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box12-img3"></div>
+                        <a class="anchor-content" href="">Ride-on scooters | Starting &#8377 960</a>
+                    </div>
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box12-img4"></div>
+                        <a class="anchor-content" href="">Slides | Starts at &nbsp &nbsp &nbsp &nbsp &#8377 1,795</a>
+                    </div>
+                </div>
+                <div class="box-shop"><a class="anchor-shop" href="">Explore more toys</a></div>
+            </div>
+            <div class="boxlg boxlg4"></div>
+            <div class="boxlg boxlg5"></div>
+            <div class="boxmd boxmd1"></div>
+            <div class="box box13">
+                <h2>Up to 40% off | Daily &nbsp essentials</h2>
+                <div class="inner-box2">
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box13-img1"></div>
+                        <a class="anchor-content" href="">Protein supplements</a>
+                    </div>
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box13-img2"></div>
+                        <a class="anchor-content" href="">Ayurveda</a>
+                    </div>
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box13-img3"></div>
+                        <a class="anchor-content" href="">Weight management</a>
+                    </div>
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box13-img4"></div>
+                        <a class="anchor-content" href="">Family nutrition</a>
+                    </div>
+                </div>
+                <div class="box-shop"><a class="anchor-shop" href="">See all offers</a></div>
+            </div>
+            <div class="box box14">
+                <h2>Starting &#8377 99 | Starts your fitness journey</h2>
+                <div class="inner-box1 box14-img1"></div>
+                <div class="box-shop"><a class="anchor-shop" href="">See more</a></div>
+            </div>
+            </div>
+            <div class="box box15">
+                <h2>Under &#8377 499 | Pocket-friendly fashion</h2>
+                <div class="inner-box2">
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box15-img1"></div>
+                        <a class="anchor-content" href="">Clothing</a>
+                    </div>
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box15-img2"></div>
+                        <a class="anchor-content" href="">Backpack</a>
+                    </div>
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box15-img3"></div>
+                        <a class="anchor-content" href="">Footwear</a>
+                    </div>
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box15-img4"></div>
+                        <a class="anchor-content" href="">View all</a>
+                    </div>
+                </div>
+                <div class="box-shop"><a class="anchor-shop" href="">See all offers</a></div>
+            </div>
+            <div class="box box16">
+                <h2>Bestsellers in Women's Indian Clothing</h2>
+                <div class="inner-box16">
+                    <div class="box16-img1"></div>
+                    <div class="box16-img2"></div>
+                    <div class="box16-img3"></div>
+                    <div class="box16-img4"></div>
+                </div>
+            </div>
+            <div class="boxlg boxlg6"></div>
+            <div class="boxlg boxlg7"></div>
+            <div class="box box17">
+                <h2>Essentials for Expecting Mothers</h2>
+                <div class="inner-box2">
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box17-img1"></div>
+                        <a class="anchor-content" href="">Pregnancy supplements</a>
+                    </div>
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box17-img2"></div>
+                        <a class="anchor-content" href="">Maternity Sleep & Loungewear</a>
+                    </div>
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box17-img3"></div>
+                        <a class="anchor-content" href="">Maternity pillows</a>
+                    </div>
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box17-img4"></div>
+                        <a class="anchor-content" href="">Maternity Skin care</a>
+                    </div>
+                </div>
+                <div class="box-shop"><a class="anchor-shop" href="">See more</a></div>
+            </div>
+            <div class="box box18">
+                <h2>Rakshak | Watch Now Only on miniTV</h2>
+                <div class="inner-box1 box18-img1"></div>
+                <div class="box-shop"><a class="anchor-shop" href="">Watch for FREE | miniTV</a></div>
+            </div>
+            </div>
+            <div class="box box19">
+                <h2>One stop shop for all your wedding shopping</h2>
+                <div class="inner-box2">
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box19-img1"></div>
+                           <a class="anchor-content" href="">Shop for her</a>
+                    </div>
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box19-img2"></div>
+                        <a class="anchor-content" href="">Shop for him</a>
+                    </div>
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box19-img3"></div>
+                        <a class="anchor-content" href="">Pooja essentials</a>
+                    </div>
+                    <div class="inner-box-sm">
+                        <div class="inner-img1 box19-img4"></div>
+                        <a class="anchor-content" href="">Explore the store</a>
+                    </div>
+                </div>
+                <div class="box-shop"><a class="anchor-shop" href="">See more</a></div>
+            </div>
+            <div class="box box20">
+                <h2>Gift Store</h2>
+                <div class="inner-box2">
+                    <div class="inner-box">
+                        <div class="inner-img box20-img1"></div>
+                        <a class="anchor-content" href="">Gift for men</a>
+                    </div>
+                    <div class="inner-box">
+                        <div class="inner-img box20-img2"></div>
+                        <a class="anchor-content" href="">Gift for women</a>
+                    </div>
+                    <div class="inner-box">
+                        <div class="inner-img box20-img3"></div>
+                        <a class="anchor-content" href="">Gift for boys</a>
+                    </div>
+                    <div class="inner-box">
+                        <div class="inner-img box20-img4"></div>
+                        <a class="anchor-content" href="">Gift for girls</a>
+                    </div>
+                </div>
+                <div class="box-shop"><a class="anchor-shop" href="">See more</a></div>
+            </div>
+            <div class="boxlg boxlg8"></div>
+        </section>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>

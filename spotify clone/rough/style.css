@@ -1,0 +1,60 @@
+body{
+    background-color: #000000;
+}
+.sidebar-right-main3{
+    height: 260px;
+    width: 100%;
+    margin: 20px 0px;
+}
+.outer-popular-music{
+    height: 260px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+}
+.outer-music-logo{
+    height: 260px;
+    width: 270px;
+    padding: 5px 10px;
+    position:absolute;
+}
+.music-logo{
+    height: 250px;
+    width: 250px;
+}
+.music-logo img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-size: cover;
+}
+.popular-music{
+    height: 250px;
+    width: 77%;
+    position: relative;
+    left: 23%;
+    display: flex;
+    overflow-x: scroll;
+}
+.popular-music::-webkit-scrollbar{
+    display: none;
+}
+.music{
+    height: 250px;
+    width: 270px;
+    padding-right: 20px;
+}
+.music-img{
+    height: 250px;
+    width: 250px;
+}
+.music-img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-size: cover;
+}
+.music1{
+    height: 250px;
+    width: 250px;
+}
