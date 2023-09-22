@@ -105,7 +105,7 @@ body{
 }
 .cart-count{
     height: 30px;
-    width: 10px;
+    width: 30px;
     color: white;
     background-color: green;
     margin-right: 10px;
@@ -337,6 +337,9 @@ body{
     transition-duration: 300ms;
     transition-timing-function: linear;
 }
+.extra-content{
+    display: none;
+}
 .inner-restaurant-img{
     height: 250px;
      width: 100%;
@@ -489,7 +492,7 @@ body{
 .company h4{
 font-size: 1.5em;
 color: #ffffffeb;
-margin-bottom: 1.8725em;
+margin-bottom: 1.5em;
 }
 .footer a{
     text-decoration: none;
@@ -547,7 +550,145 @@ display: inline;
     
 }
 @media screen and (max-width:768px) {
-    
+    body{
+        font-size: 12px;
+    }
+    .main-margin{
+        margin: 0px 20px;
+    }
+    .main-page{
+        grid-template-rows: 60px 323px 223px 398px;
+    }
+    .footer{
+        margin: 0px 16px;
+    }
+    .header{
+        padding: 0px 5px;
+    }
+    .header-right img{
+        height: 35px;
+        width: 30px;
+    }
+    .header-right{
+        height: 60px;
+    }
+    .header-home{
+        margin-left: 5px;
+    }
+    .header-right span{
+        display: none;
+    }
+    .header-right i{
+        padding-left: 5px;
+    }
+    .header-left div{
+        padding: 0px 2px;
+    }
+    .search{
+        width: 81px;
+    }
+    .offers{
+        width: 112px;
+    }
+    .help{
+        width: 65px;
+    }
+    .sign-in{
+        width: 80px;
+    }
+    .cart-count{
+        width: 15px;
+        margin-right: 2px;
+        height: 20px;
+    }
+    .cart-count p{
+        font-size: 16px ;
+        padding-top: 2px;
+    }
+    .inner-best-img{
+        height: 250px;
+        width: 450px;
+    }
+    .inner-best-img img{
+        width: 438px;
+    }
+    .best-arrow{
+        height: 30px;
+        width: 30px;
+        right: 12px;
+    }
+    .best-arrow-left{
+        right: 45px;
+    }
+    .your-arrow{
+        height: 30px;
+        width: 30px;
+        right: 12px;
+    }
+    .your-arrow-left{
+        right: 45px;
+    }
+    .inner-your-img{
+        height: 150px;
+    }
+    .inner-your-img img{
+        height: 150px;
+        width: 125px;
+    }
+    .top-arrow{
+        height: 30px;
+        width: 30px;
+        right: 12px;
+    }
+    .top-arrow-left{
+        right: 45px;
+    }
+    .outer-top-img{
+        height: 325px;
+        width: 300px;
+    }
+    .inner-top-img{
+        height: 225px;
+        width: 288px;
+    }
+    .inner-top-content i{
+        font-size: 15px;
+    }
+    .restaurant-filter{
+        grid-template-columns: 80px 70px 125px 135px 115px 100px 62px 135px 150px;
+        grid-template-rows: 30px;
+    }
+    .restaurant-online-grid{
+        grid-template-columns: minmax(145px,256px) minmax(145px,256px) minmax(145px,256px);
+        grid-auto-rows: auto;
+    }
+    .extra-content{
+        display: block;
+    }
+    .inner-restaurant-img{
+        height: 150px;
+    }
+    .inner-restaurant-content i{
+        font-size: 15px;
+    }
+    .best-places-grid{
+        grid-template-columns: repeat(3,minmax(145px,258px));
+        grid-auto-rows: auto;
+    }
+    .explore-grid{
+        grid-template-columns: repeat(2,minmax(245px,350px));
+        grid-template-rows: auto;
+    }
+    .best-experience img{
+        height: 50px;
+        width: 120px;
+    }
+    .last-footer{
+        grid-template-columns: repeat(4,minmax(auto,auto));
+    }
+    .footer-cities{
+        width: 100px;
+    }
 }
 @media screen and (max-width:576px) {
     body{
