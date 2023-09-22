@@ -66,14 +66,14 @@ body{
     cursor: pointer;
 }
 .header-right i{
-    font-size: 20px;
+    font-size: 1.25em;
     padding-bottom: 5px;
     padding-left: 20px;
     color: #ffa700;
     cursor: pointer;
 }
 .header-left ul{
-    height: 80px;
+    height: 100%;
     display: flex;
    align-items: center;
 } 
@@ -81,7 +81,7 @@ body{
     list-style: none;
 }
 .header-left div{
-    padding: 0px 20px;
+    padding: 0 20px;
     font-size: 1.5em;
     font-weight: 700;
 }
@@ -123,16 +123,17 @@ body{
 }
 .best-offers{
     position: relative;
-    padding: 16px;
+    padding: 1em;
 }
 .best-heading{
     font-size: 1.5em;
     color: #02060ceb;
-    margin-bottom: 16px;
+    margin-bottom: 1em;
 }
 .best-img{
     display: flex;
     overflow-x: scroll;
+    overflow-y: hidden;
 }
 .best-img::-webkit-scrollbar{
     display: none;
@@ -140,7 +141,7 @@ body{
 .inner-best-img{
     height: 352px;
     width: 666px;
-    padding-right: 16px;
+    padding-right: 1em;
 }
 .inner-best-img img{
     height: 100%;
@@ -154,7 +155,7 @@ body{
 .best-arrow{
     height: 40px;
     width: 40px;
-    font-size: 25px;
+    font-size: 1.5em;
     background-color: #e2e2e7;
     border-radius: 50%;
     border: 0px;
@@ -166,21 +167,21 @@ body{
 }
 .main2{
     grid-area: main2;
-    margin-top: 20px;
+    margin-top: 1.25em;
 }
 .your-mind{
-    padding: 16px;
+    padding: 1em;
     position: relative;
 }
 .your-heading{
     font-size: 1.5em;
-    margin-bottom: 16px;
+    margin-bottom: 1em;
     color: #02060ceb;
 }
 .your-arrow{
     height: 40px;
     width: 40px;
-    font-size: 25px;
+    font-size: 1.5em;
     background-color: #e2e2e7;
     border-radius: 50%;
     border: 0px;
@@ -193,6 +194,7 @@ body{
 .your-img{
     display: flex;
     overflow-x: scroll;
+    overflow-y: hidden;
 }
 .your-img::-webkit-scrollbar{
     display: none;
@@ -206,21 +208,21 @@ body{
 }
 .main3{
     grid-area: main3;
-    margin-top: 20px;
+    margin-top: 1.25em;
 }
 .top-restaurant{
     position: relative;
-    padding: 16px;
+    padding: 1em;
 }
 .top-heading{
     font-size: 1.5em;
     color: #02060ceb;
-    margin-bottom: 16px;
+    margin-bottom: 1em;
 }
 .top-arrow{
     height: 40px;
     width: 40px;
-    font-size: 25px;
+    font-size: 1.5em;
     background-color: #e2e2e7;
     border-radius: 50%;
     border: 0px;
@@ -246,14 +248,11 @@ body{
 .inner-top-img{
      height: 300px;
      width: 450px;
-     padding: 0px 16px;
+     padding-right: 1em;
 }
 .outer-top-img:hover{
     transform: scale(0.95);
     cursor: pointer;
-}
-.inner-top-img1{
-    padding-left: 0px;
 }
 .inner-top-imglast{
     padding-right: 0px;
@@ -264,8 +263,8 @@ body{
     border-radius: 30px;
 }
 .inner-top-content{
-    margin-top: 10px;
-    padding-left: 30px;
+    margin-top: 0.625em;
+    padding-left: 1.875em;
 }
 .inner-top-content h4{
     font-size: 1.5em;
@@ -281,25 +280,25 @@ body{
 }
 .inner-top-content p{
     font-size: 1.25em;
-    line-height: 28px;
+    line-height: 1.75em;
 }
 .main4{
     grid-area: main4;
-    margin-top: 20px;
+    margin-top: 1.25em;
 }
 .restaurant-online{
-    padding: 16px;
+    padding: 1em;
 }
 .restaurant-heading{
     font-size: 1.5em;
     color: #02060ceb;
-    margin-bottom: 16px;
+    margin-bottom: 1em;
 }
 .restaurant-filter{
     display: flex;
-    gap: 20px;
-    margin-bottom: 16px;
-    padding-top: 16px;
+    gap: 1.25em;
+    margin-bottom: 1em;
+    padding-top: 1em;
 }
 .inner-filter{
     height: 50px;
@@ -531,7 +530,133 @@ display: inline;
     border: 2px solid #ffffff99;
     border-radius: 15px;
 }
+@media screen and (max-width:576px) {
+    body{
+        font-size: 8px;
+    }
+    .main-margin{
+        margin: 0px 5px;
+    }
+    .main-page{
+        grid-template-rows: 50px 200px 180px;
+    }
+    .footer{
+        margin: 0px 4px;
+    }
+    .header{
+        padding: 0px 5px;
+    }
+    .header-right img{
+        height: 25px;
+        width: 25px;
+    }
+    .header-right{
+        height: 50px;
+    }
+    .header-home{
+        margin-left: 5px;
+    }
+    .header-right span{
+        display: none;
+    }
+    .header-right p{
+        padding-left: 5px;
+    }
+    .header-right i{
+        padding-left: 5px;
+    }
+    .header-left div{
+        padding: 0px 5px;
+    }
+    .header-left i{
+        display: none;
+    }
+    .search{
+        width: 40px;
+    }
+    .help{
+        width: 30px;
+    }
+    .cart{
+        width: 30px;
+    }
+    .cart-count{
+        display: none;
+        margin-right: 0px;
+    }
+    .sign-in{
+        width: 48px;
+    }
+    .offers{
+        width: 65px;
+        height: 20px;
+    }
+    .offers img{
+        display: none;
+    }
+    .inner-best-img{
+        height: 150px;
+        width: 300px;
+    }
+    .inner-best-img img{
+        width: 292px;
+    }
+    .best-arrow{
+        height: 20px;
+        width: 20px;
+        right: 8px;
+    }
+    .best-arrow-left{
+      right: 30px;
+    }
+    .your-arrow{
+        height: 20px;
+        width: 20px;
+        right: 8px;
+    }
+    .your-arrow-left{
+        right: 30px;
+    }
+    .inner-your-img{
+        height: 120px;
+    }
+    .inner-your-img img{
+        height: 120px;
+        width: 100px;
+    }
+    .top-arrow{
+        height: 20px;
+        width: 20px;
+        right: 8px;
+    }
+    .top-arrow-left{
+        right: 30px;
+    }
+    .outer-top-img{
+        height: 215px;
+        width: 200px;
+    }
+    .inner-top-img{
+        height: 150px;
+        width: 192px;
+    }
+    .inner-top-content i{
+        font-size: 10px;
+    }
+}
+@media screen and (min-width:576px){
+    
+}
+@media screen and (max-width:768px){
 
-
-
+}
+@media screen and (max-width:992px) {
+    
+}
+@media screen and (max-width:1200px) {
+    
+}
+@media screen and (min-width:1400px) {
+    
+}
 
