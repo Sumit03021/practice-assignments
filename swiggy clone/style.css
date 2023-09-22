@@ -21,7 +21,7 @@ body{
     "footer4"
     "footer5";
     grid-template-columns: 100%;  
-    grid-template-rows: 80px 430px 250px 560px auto 320px 320px 150px 178px 600px ;
+    grid-template-rows: 80px 442px 290px 540px auto 343px 343px 170px 178px 600px ;
 }  
 .header{
     grid-area: header;
@@ -30,7 +30,6 @@ body{
     justify-content: space-between;
     padding: 0px 20px;
     background-color: #ffffff;
-    margin-bottom: 20px;
     position: fixed;
     z-index: 100;
 }
@@ -50,7 +49,7 @@ body{
     transform: scale(1.2);
 }
 .header-home{
-    font-size: 1.25em;
+    font-size: 1.5em;
     margin-left: 80px;
     padding-bottom: 5px;
     border-bottom: 3px solid #3d4152;
@@ -59,7 +58,7 @@ body{
     cursor: pointer;
 }
 .header-right p{
-    font-size: 1.25em;
+    font-size: 1.5em;
     padding-bottom: 5px;
     padding-left: 10px;
     color: #686b78;
@@ -67,6 +66,7 @@ body{
     cursor: pointer;
 }
 .header-right i{
+    font-size: 20px;
     padding-bottom: 5px;
     padding-left: 20px;
     color: #ffa700;
@@ -82,7 +82,7 @@ body{
 }
 .header-left div{
     padding: 0px 20px;
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-weight: 700;
 }
 .header-left a:hover{
@@ -106,12 +106,14 @@ body{
 .cart-count{
     height: 30px;
     width: 10px;
-    font-size: 1em;
-    /* align-items: center; */
     color: white;
     background-color: green;
     margin-right: 10px;
     border-radius: 4px;
+}
+.cart-count p{
+    font-size: 24px;
+    text-align: center;
 }
 .main-margin{
     margin: 0px 160px;
@@ -164,6 +166,7 @@ body{
 }
 .main2{
     grid-area: main2;
+    margin-top: 20px;
 }
 .your-mind{
     padding: 16px;
@@ -195,14 +198,15 @@ body{
     display: none;
 }
 .inner-your-img{
-    height: 200px;
+    height: 180px;
 }
 .inner-your-img img{
-    height: 200px;
+    height: 180px;
     width: 150px;
 }
 .main3{
     grid-area: main3;
+    margin-top: 20px;
 }
 .top-restaurant{
     position: relative;
@@ -234,7 +238,7 @@ body{
     display: none;
 }
 .outer-top-img{
-    height: 470px;
+    height: 430px;
     width: 450px;
     transition-duration: 300ms;
     transition-timing-function: linear;
@@ -281,6 +285,7 @@ body{
 }
 .main4{
     grid-area: main4;
+    margin-top: 20px;
 }
 .restaurant-online{
     padding: 16px;
@@ -330,7 +335,7 @@ body{
 }
 .inner-restaurant-img{
     height: 250px;
-     width: 340px;
+     width: 100%;
 }
 .restaurant-img:hover{
     transform: scale(0.95);
@@ -342,6 +347,7 @@ body{
     border-radius: 30px;
 }
 .inner-restaurant-content{
+    width: 100%;
     margin-top: 10px;
     padding-left: 30px;
 }
@@ -366,6 +372,7 @@ body{
 }
 .footer1{
     grid-area: footer1;
+    margin-top: 20px;
 }
 .best-places{
     padding: 16px;
@@ -399,12 +406,14 @@ body{
 }
 .footer2{
    grid-area: footer2;
+   margin-top: 20px;
 }
 .best-cuisines{
     padding: 16px;
 }
 .footer3{
     grid-area: footer3;
+    margin-top: 20px;
 }
 .explore{
     padding: 16px;
@@ -447,7 +456,6 @@ body{
     width: 800px;
     font-size: 1.5em;
 }
-
 .footer5{
     background-color: #02060c;
     grid-area: footer5;
@@ -469,7 +477,6 @@ grid-template-areas:
 .last-footer2{
     grid-area:b ;
 }
-
 .company h4{
 font-size: 1.5em;
 color: #ffffffeb;
