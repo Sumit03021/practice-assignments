@@ -21,7 +21,7 @@ body{
     "footer4"
     "footer5";
     grid-template-columns: 100%;  
-    grid-template-rows: 80px 442px 290px 540px auto auto auto 170px 166px 1000px ;
+    grid-template-rows: 80px 442px 290px 540px auto auto auto 170px 166px auto ;
 }  
 .header{
     grid-area: header;
