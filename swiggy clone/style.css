@@ -146,6 +146,7 @@ body{
 .inner-best-img img{
     height: 100%;
     width: 650px;
+    cursor: pointer;
 }
 .inner-best-imglast{
     height: 352px;
@@ -161,6 +162,7 @@ body{
     border: 0px;
     position: absolute;
     right: 16px;
+    cursor: pointer;
 }
 .best-arrow-left{
     right: 60px;
@@ -187,6 +189,7 @@ body{
     border: 0px;
     position: absolute;
     right: 16px; 
+    cursor: pointer;
 }
 .your-arrow-left{
     right: 60px;
@@ -205,6 +208,7 @@ body{
 .inner-your-img img{
     height: 180px;
     width: 150px;
+    cursor: pointer;
 }
 .main3{
     grid-area: main3;
@@ -228,6 +232,7 @@ body{
     border: 0px;
     position: absolute;
     right: 16px;
+    cursor: pointer;
 }
 .top-arrow-left{
     right: 60px;
@@ -399,6 +404,7 @@ body{
 .best-places-heading{
     border: 2px solid rgb(189, 184, 184);
     border-radius: 0.9375em;
+    cursor: pointer;
 }
 .best-places-heading h4{
     font-size: 1.25em;
@@ -439,6 +445,7 @@ body{
     border-radius: 0.9375em;
     padding: 1em;
     text-align: center;
+    cursor: pointer;
 }
 .inner-explore h4{
  font-size: 1.25em;
@@ -543,6 +550,11 @@ display: inline;
     color: #ffffff99;
     border: 2px solid #ffffff99;
     border-radius: 0.9375em;
+}
+@media screen and (min-width:1200px) and (max-width:1400px) {
+    .inner-restaurant-img{
+        height: 210px;
+    }
 }
 @media screen and (min-width:992px) and (max-width:1200px) {
    body{
