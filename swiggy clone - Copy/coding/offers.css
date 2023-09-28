@@ -1,0 +1,507 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    background-color: #ffffff;
+}
+.main-page{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main4"
+    "footer1"
+    "footer2"
+    "footer3"
+    "footer4"
+    "footer5";
+    grid-template-columns: 100%;  
+    grid-template-rows: 80px auto auto auto 170px 166px auto ;
+} 
+.main-margin{
+    margin: 0px 160px;
+} 
+.main4{
+    grid-area: main4;
+    margin-top: 1.25em;
+}
+.restaurant-online{
+    padding: 1em;
+}
+.restaurant-heading{
+    font-size: 1.5em;
+    color: #02060ceb;
+    margin-bottom: 1em;
+}
+.restaurant-filter{
+    display: grid;
+    gap: 1.25em;
+    grid-template-columns: 110px 95px 165px 180px 150px 130px 85px 180px 200px;
+    grid-template-rows: 50px;
+    margin: 1em 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.restaurant-filter::-webkit-scrollbar{
+    display: none;
+}
+.inner-filter{
+    padding: 1em;
+    border-radius: 1em;
+    border: 2px solid rgb(189, 184, 184);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.filter-heading{
+    font-size: 1.25em;
+    color: #02060cbf;
+    font-weight: 600;
+    margin-right: 0.625em;
+}
+.filter-icon{
+    font-size: 1.25em;
+    color: #02060cbf;
+}
+.restaurant-online-grid{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(190px,400px));
+    grid-auto-rows: auto;
+    gap: 1.8125em;
+    padding-top: 1em;
+}
+.restaurant-img{
+    height: 100%;
+    width: 100%;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+}
+.extra-content{
+    display: none;
+}
+.inner-restaurant-img{
+    height: 250px;
+     width: 100%;
+}
+.restaurant-img:hover{
+    transform: scale(0.95);
+    cursor: pointer;
+}
+.inner-restaurant-img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 1.875em;
+}
+.inner-restaurant-content{
+    width: 100%;
+    margin-top: 0.625em;
+    padding-left: 1.25em;
+}
+.inner-restaurant-content h4{
+    font-size: 1.25em;
+    color: #02060ceb;
+}
+.inner-restaurant-content i{
+    font-size: 20px;
+    color: darkgreen;
+}
+.inner-restaurant-content h5{
+    font-size: 1.5em;
+    margin-bottom: 2px;
+}
+.inner-restaurant-content p{
+    font-size: 1em;
+    line-height: 1.75em;
+}
+.footer{
+    margin: 0px 100px;
+}
+.footer1{
+    grid-area: footer1;
+    margin-top: 1.25em;
+}
+.best-places{
+    padding: 1em;
+}
+.best-places-grid{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(220px,420px));
+    grid-auto-rows: auto;
+    gap: 1.8125em;
+}
+.best-places-mainheading{
+    font-size: 1.5em;
+    color: #02060ceb;
+    margin-bottom: 1em;
+}
+.best-places-heading{
+    border: 2px solid rgb(189, 184, 184);
+    border-radius: 0.9375em;
+    cursor: pointer;
+}
+.best-places-heading h4{
+    font-size: 1.25em;
+    padding: 1em;
+    text-align: center;
+    color: #02060cbf;
+}
+.best-places-heading i{
+    font-size: 20px;
+    color: #02060ceb;
+}
+.best-places-heading1 h4{
+    color: #02060ceb;
+    font-weight: 900;
+}
+.footer2{
+   grid-area: footer2;
+   margin-top: 1.25em;
+}
+.best-cuisines{
+    padding: 1em;
+}
+.footer3{
+    grid-area: footer3;
+    margin-top: 1.25em;
+}
+.explore{
+    padding: 1em;
+}
+.explore-grid{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(469px,760px));
+    gap: 1.8125em;
+    grid-template-rows: auto;
+}
+.inner-explore{
+    border: 2px solid rgb(189,184,184);
+    border-radius: 0.9375em;
+    padding: 1em;
+    text-align: center;
+    cursor: pointer;
+}
+.inner-explore h4{
+ font-size: 1.25em;
+ color: #02060cbf;
+}
+.footer4{
+    background-color: #f0f0f5;
+    grid-area: footer4;
+    margin-top: 2.125em;
+}
+.best-experience{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+.best-experience img{
+    height: 100px;
+    width: 250px;
+    padding-right: 0.625em;
+    cursor: pointer;
+}
+.experience-heading{
+    height: 100%;
+    font-size: 1.75em;
+    color: #02060cbf;
+    font-weight: 900;
+    padding-right: 3em;
+}
+.footer5{
+    background-color: #02060c;
+    grid-area: footer5;
+    padding-top: 3em;
+    padding-bottom: 7.5em;
+}
+.last-footer{
+    display: grid;
+    justify-content: center;
+    gap: 1.875em;
+    grid-template-columns: repeat(4,minmax(220px,250px));
+    grid-auto-rows: auto;
+    grid-template-areas: 
+"a b c d"
+"a b e d";
+}
+.last-footer1{
+    grid-area: a ;
+}
+.last-footer2{
+    grid-area:b ;
+}
+.company h4{
+font-size: 1.5em;
+color: #ffffffeb;
+margin-bottom: 24px;
+}
+.footer a{
+    text-decoration: none;
+    color: #ffffff99;
+    font-size: 1.5em;
+}
+.last-footer2 li div{
+    margin-top: 1em;
+}
+.last-footer3 li div{
+    margin-top: 1em;
+}
+.last-footer4 li div{
+    margin-top: 1em;
+}
+.last-footer5 li div{
+    margin-top: 1em;
+}
+.footer-brand h2{
+  font-size: 2em;
+  color: #ffffffeb;
+  font-weight: 900;
+}
+.copyright h6{
+font-size: 1.5em;
+color: #ffffff99;
+display: inline;
+}
+.copyright span{
+    font-size: 1.25em;
+    color: #ffffff99;
+}
+.last-footer3{
+    grid-area:c ;
+}
+.last-footer4{
+    grid-area:d ;
+}
+.last-footer5{
+    grid-area: e;
+}
+.footer-cities{
+    margin-top: 1em;
+    text-align: center;
+    width: 150px;
+    padding: 0.75em 1em;
+    color: #ffffff99;
+    border: 2px solid #ffffff99;
+    border-radius: 0.9375em;
+}
+@media screen and (min-width:1200px) and (max-width:1400px) {
+    .inner-restaurant-img{
+        height: 210px;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1200px) {
+    body{
+     font-size: 15px;
+    } 
+    .main-page{
+     grid-template-rows: 75px;
+    }
+    .main-margin{
+     margin: 0px 80px;
+    }
+    .footer{
+     margin: 0px 64px;
+    }
+ .restaurant-filter{
+     grid-template-columns: 105px 90px 155px 170px 139px 120px 78px 170px 190px;
+     grid-template-rows: 35px;
+ }
+ .restaurant-online-grid{
+     grid-template-columns: repeat(4,minmax(175px,240px));
+     grid-auto-rows: auto;
+ }
+ .inner-restaurant-img{
+     height: 210px;
+ }
+ .inner-restaurant-content i{
+     font-size: 18.75px;
+ }
+ .best-places-grid{
+     grid-template-columns: repeat(4,minmax(183px,250px));
+     grid-auto-rows: auto;
+ }
+ .best-places-heading i{
+     font-size: 15px;
+ }
+ .explore-grid{
+     grid-template-columns: repeat(2,minmax(390px,520px));
+     grid-template-rows: auto;
+ }
+ .best-experience img{
+     height: 75px;
+     width: 175px;
+ }
+ .company h4{
+     margin-bottom: 21px;
+ }
+ .last-footer{
+     grid-template-columns: repeat(4,minmax(auto,auto));
+ }
+ .footer-cities{
+     width: 120px;
+ }
+ }
+ @media screen and (min-width:768px) and (max-width:992px) {
+     body{
+         font-size: 14px;
+     }
+     .main-page{
+         grid-template-rows: 65px;
+     }
+     .main-margin{
+         margin: 0px 40px;
+     }
+     .footer{
+         margin: 0px 32px;
+     }
+     .restaurant-filter{
+         grid-template-columns: 95px 82px 145px 157px 130px 115px 70px 160px 175px;
+         grid-template-rows: 35px;
+     }
+     .restaurant-online-grid{
+         grid-template-columns: repeat(3,minmax(194px,280px));
+         grid-auto-rows: auto;
+     }
+     .extra-content{
+         display: block;
+     }
+     .inner-restaurant-img{
+         height: 180px;
+     }
+     .inner-restaurant-content i{
+         font-size: 17.5px;
+     }
+     .best-places-grid{
+         grid-template-columns: repeat(3,minmax(198px,285px));
+         grid-auto-rows: auto;
+     }
+     .best-places-heading i{
+         font-size: 15px;
+     }
+     .explore-grid{
+         grid-template-columns: repeat(2,minmax(310px,445px));
+         grid-template-rows: auto;
+     }
+     .best-experience img{
+         height: 60px;
+         width: 150px;
+     }
+     .company h4{
+         margin-bottom: 20px;
+     }
+     .last-footer{
+         grid-template-columns: repeat(4,minmax(auto,auto));
+     }
+     .footer-cities{
+         width: 120px;
+     }
+ }
+ @media screen and (min-width:576px) and (max-width:768px) {
+     body{
+         font-size: 12px;
+     }
+     .main-margin{
+         margin: 0px 20px;
+     }
+     .main-page{
+         grid-template-rows: 60px;
+     }
+     .footer{
+         margin: 0px 16px;
+     }
+     .restaurant-filter{
+         grid-template-columns: 80px 70px 125px 135px 115px 100px 62px 140px 155px;
+         grid-template-rows: 30px;
+     }
+     .restaurant-online-grid{
+         grid-template-columns: repeat(3,minmax(145px,256px));
+         grid-auto-rows: auto;
+     }
+     .extra-content{
+         display: block;
+     }
+     .inner-restaurant-img{
+         height: 150px;
+     }
+     .inner-restaurant-content i{
+         font-size: 15px;
+     }
+     .best-places-grid{
+         grid-template-columns: repeat(3,minmax(145px,258px));
+         grid-auto-rows: auto;
+     }
+     .best-places-heading i{
+         font-size: 15px;
+     }
+     .explore-grid{
+         grid-template-columns: repeat(2,minmax(245px,350px));
+         grid-template-rows: auto;
+     }
+     .best-experience img{
+         height: 50px;
+         width: 120px;
+     }
+     .company h4{
+         margin-bottom: 18px;
+     }
+     .last-footer{
+         grid-template-columns: repeat(4,minmax(auto,auto));
+     }
+     .footer-cities{
+         width: 100px;
+     }
+ }
+ @media screen and (max-width:576px) {
+     body{
+         font-size: 8px;
+     }
+    .main-margin{
+         margin: 0px 5px;
+     }
+     .main-page{
+         grid-template-rows: 50px ;
+     }
+     .footer{
+         margin: 0px 4px;
+     } 
+     .restaurant-filter{
+         grid-template-columns: 55px 50px 85px 95px 78px 65px 42.5px 92px 102px;
+         grid-template-rows: 30px;
+     }
+     .restaurant-online-grid{
+         grid-template-columns: repeat(2, minmax(160px,270px));
+         grid-auto-rows: 190px;
+     }
+     .inner-restaurant-img{
+         height: 135px;
+     }
+     .inner-restaurant-content i{
+         font-size: 10px;
+     }
+     .best-places-grid{
+         grid-template-columns: repeat(2,minmax(160px,270px));
+         grid-auto-rows: auto;
+     }
+     .best-places-heading i{
+         font-size: 10px;
+     }
+     .explore-grid{
+         grid-template-columns: repeat(2,minmax(160px,270px));
+         grid-template-rows: auto;
+     }
+     .best-experience img{
+         height: 40px;
+         width: 92px;
+     }
+     .company h4{
+         margin-bottom: 12px;
+     }
+     .last-footer{
+         grid-template-columns: repeat(3,minmax(auto,auto));
+     }
+     .footer-cities{
+         width: 70px;
+     }
+ }
