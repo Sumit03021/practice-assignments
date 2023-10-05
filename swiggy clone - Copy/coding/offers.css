@@ -20,12 +20,127 @@ body{
     grid-template-columns: 100%;  
     grid-template-rows: 80px auto auto auto 170px 166px auto ;
 } 
+.header{
+    height: 80px;
+    width: 100%;
+    grid-area: header;
+    position:fixed;
+    z-index: 100;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
+.header-one{
+    height: 80px;
+    width: 100%;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+}
+.header-one-filter{
+    display: grid;
+    gap: 1.25em;
+    grid-template-columns: 110px 95px 165px 180px 150px 130px 85px 180px 200px 300px;
+    grid-template-rows: 50px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.header-one-filter::-webkit-scrollbar{
+    display: none;
+}
+.search-tab{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color:rgb(235,232,232);
+    cursor: pointer;
+    color: #282c3f;
+    border-radius: 0.5em;
+}
+.search-input{
+    height: 100%;
+ width: 90%;
+ padding: 0.435em 1.087em;
+ border-radius: 0.5em;
+ outline: none;
+ border: none;
+ font-size: 1.15em;
+ background-color: rgb(235,232,232);
+}
+.search-tab i{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    align-items: center;
+    color: #282c3f;
+}
+.header-two{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+}
+.header-two img{
+    height: 50px;
+    width: 200px;
+}
+.header-two-left{
+    display: flex;
+    align-items: center;
+    margin: 0em 1em;
+}
+.header-two-left h2{
+padding: 0em 0.38em;
+font-size: 1.4em;
+color: #02060cbf;
+}
+.header-two-left i{
+    color: #ffa700;
+    font-size: 1.25em;
+}
+.header-two-right{
+    margin: 0em 1em;
+}
+.header-right-search{
+    height: 50px;
+    width: 300px;
+    display: flex;
+    color: #282c3f;
+    background-color: rgb(235,232,232);
+    cursor: pointer;
+    border-radius: 0.5em;
+}
+.header-search-input{
+    height: 100%;
+    width: 90%;
+    padding: 0.435em 1.087em;
+    border-radius: 0.5em;
+    outline: none;
+    border: none;
+    font-size: 1.15em;
+    background-color: rgb(235,232,232);
+}
+.header-right-search i{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    align-items: center;
+    color: #282c3f;
+}
+.fa-circle-user{
+    font-size: 2.5em;
+    padding-left: 0.4em;
+}
 .main-margin{
     margin: 0px 160px;
 } 
 .main4{
     grid-area: main4;
-    margin-top: 1.25em;
 }
 .restaurant-online{
     padding: 1em;
@@ -298,6 +413,29 @@ display: inline;
     .main-page{
      grid-template-rows: 75px;
     }
+    .header{
+        height: 75px;
+    }
+    .header-one{
+        height: 75px;
+        padding: 0px 15px;
+    }
+    .header-one-filter{
+        grid-template-columns: 105px 90px 155px 170px 139px 120px 78px 170px 190px 275px;
+        grid-template-rows: 35px;
+    }
+    .header-two{
+        height: 75px;
+        padding: 0px 15px;
+    }
+    .header-two img{
+        height: 45px;
+        width: 175px;
+    }
+    .header-right-search{
+        height: 45px;
+        width: 275px;
+    }
     .main-margin{
      margin: 0px 80px;
     }
@@ -356,6 +494,29 @@ display: inline;
      .footer{
          margin: 0px 32px;
      }
+     .header{
+        height: 65px;
+     }
+     .header-one{
+        height: 65px;
+        padding: 0px 10px;
+     }
+     .header-two{
+        height: 65px;
+        padding: 0px 10px;
+     }
+     .header-two img{
+        height: 40px;
+        width: 150px;
+     }
+     .header-right-search{
+        height: 40px;
+        width: 250px;
+     }
+     .header-one-filter{
+        grid-template-columns: 95px 82px 145px 157px 130px 115px 70px 160px 175px 250px;
+        grid-template-rows: 35px;
+    }
      .restaurant-filter{
          grid-template-columns: 95px 82px 145px 157px 130px 115px 70px 160px 175px;
          grid-template-rows: 35px;
@@ -411,6 +572,29 @@ display: inline;
      .footer{
          margin: 0px 16px;
      }
+     .header{
+        height: 60px;
+     }
+     .header-one{
+        height: 60px;
+        padding: 0px 5px;
+     }
+     .header-two{
+        height: 60px;
+        padding: 0px 5px;
+     }
+     .header-two img{
+        height: 35px;
+        width: 100px;
+     }
+     .header-right-search{
+        height: 35px;
+        width: 200px;
+     }
+     .header-one-filter{
+        grid-template-columns: 80px 70px 125px 135px 115px 100px 62px 140px 155px 200px;
+        grid-template-rows: 30px;
+    }
      .restaurant-filter{
          grid-template-columns: 80px 70px 125px 135px 115px 100px 62px 140px 155px;
          grid-template-rows: 30px;
@@ -466,6 +650,29 @@ display: inline;
      .footer{
          margin: 0px 4px;
      } 
+     .header{
+        height: 50px;
+     }
+     .header-one{
+        height: 50px;
+        padding: 0px 5px;
+     }
+     .header-two{
+        height: 50px;
+        padding:0px 5px;
+     }
+     .header-two img{
+        height: 30px;
+        width: 75px;
+     }
+     .header-right-search{
+        height: 30px;
+        width: 150px;
+     }
+     .header-one-filter{
+        grid-template-columns: 55px 50px 85px 95px 78px 65px 42.5px 92px 102px 150px;
+        grid-template-rows: 30px;
+    }
      .restaurant-filter{
          grid-template-columns: 55px 50px 85px 95px 78px 65px 42.5px 92px 102px;
          grid-template-rows: 30px;
