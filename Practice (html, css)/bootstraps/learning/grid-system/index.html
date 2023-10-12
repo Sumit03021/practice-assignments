@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #red{
+            background-color: red;
+            height: 800px;
+        }
+        #green{
+            background-color: green;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- columns parents always be rows but rows parents is column and container. -->
+    <!-- container-fluid---- gives 100% width
+    container--- gives margin from left to right and 100% width for mobile cases.
+     container(breakpoint)---gives a 100% for particular widths-->
+<!-- always takes content in row by column inside. -->
+<div class="container-fluid" id="red">
+<div class="row" id="green"> 
+    <!-- for responsive use all col-breaks-with values -->
+    <div class="col-lg col-md col-sm col bg-primary"></div>
+    <div class="col-lg-4 col-md-6 col-sm-5 col-4 bg-secondary">
+        <div class="row">
+            <div class="col-sm bg-primary">div 1</div>
+            <div class="col-sm bg-danger">div 2</div>
+            <div class="col-sm bg-secondary">div 3</div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-2 col-sm-4 col-4 bg-danger"></div>
+</div>
+</div>
+<!-- bg use for background color and text use text colors. -->
+<div class="bg-primary text-white">
+    <h1>hello</h1>
+</div>
+
+<!-- flows -------container > rows > columns > rows > columns > text-images -->
+<!-- extra-small  0-575px   col-* (col-lg-12 col-lg-12 col-lg-12)
+ small  576px- 768px    col-sm-* (col-lg-12 col-lg-12 col-lg-12)
+ medium   768px-992px    col-md-* (col-lg-12 col-lg-12 col-lg-12)
+large     992px-1200px   col-lg-*(col-lg-4 col-lg-4 col-lg-4)
+extra-large  1200-1400px  col-xl-* (col-lg-4 col-lg-4 col-lg-4)
+    col-xxl-* (col-lg-4 col-lg-4 col-lg-4)
+break jahan laga hai above breakpoint works same but lower works as 12 for all-->
+
+<div class="container-fluid">
+    <div class="row row-cols-3">
+        <div class="col bg-primary">div 1</div>
+        <div class="col bg-secondary">div 2</div>
+        <div class="col bg-success">div 2</div>
+        <div class="col bg-danger">div 2</div>
+        <div class="col bg-primary">div 2</div>
+        <div class="col bg-danger">div 2</div>
+    </div>
+</div>
+<!-- flexbox functionality -->
+<div class="container-fluid">
+    <div class="row align-items-center bg-warning" style="min-height: 400px;">
+        <div class="col bg-primary align-self-start">div 1</div>
+        <div class="col bg-secondary align-self-center">div 2</div>
+        <div class="col bg-success">div 2</div>
+        <div class="col bg-danger align-self-end">div 2</div>
+        <div class="col bg-primary">div 2</div>
+        <div class="col bg-danger align-self-end">div 2</div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row justify-content-between bg-warning" style="min-height: 400px;">
+        <div class="col-2 bg-primary ">div 1</div>
+        <div class="col-2 bg-secondary ">div 2</div>
+        <div class="col-2 bg-success">div 2</div>
+        <div class="col-2 bg-danger ">div 2</div>
+    </div>
+</div>
+
+<!-- ordering -->
+<div class="container-fluid">
+    <div class="row justify-content-between bg-warning" style="min-height: 400px;">
+        <div class="col-2 order-lg-2 bg-primary ">div 1</div>
+        <div class="col-2 order-lg-1 bg-secondary ">div 2</div>
+        <div class="col-2 order-lg-4 bg-success">div 2</div>
+        <div class="col-2 order-lg-3 bg-danger ">div 2</div>
+    </div>
+</div>
+<!-- offseting columns  gaps /spaces-->
+<div class="container-fluid">
+    <div class="row bg-warning" style="min-height: 400px;">
+        <div class="col-2 order-lg-2 offset-lg-1 bg-primary ">div 1</div>
+        <div class="col-2 order-lg-1 bg-secondary ">div 2</div>
+        <div class="col-2 order-lg-4 offset-2 bg-success">div 2</div>
+        <div class="col-2 order-lg-3 bg-danger ">div 2</div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
