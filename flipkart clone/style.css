@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-y: scroll;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.navbar{
+    position: fixed;
+    height: 66px;
+    width: 100%;
+    padding: 0.75rem 1.75rem;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.flipkart-upper-logo{
+    height: 22px;
+    width: 100px;
+}
+.flipkart-upper-logo img{
+    height: 100%;
+    width: 100%;
+}
+.flipkart-lower-logo{
+    font-style: italic;
+    font-size:1rem;
+    color: #9e9e9e;
+    padding-left: 1.5rem;
+    font-weight: 900;
+}
+.flipkart-lower-logo i{
+    font-size: 0.75rem;
+    font-weight: 900;
+}
+.search-bar{
+    margin-left: 1.5rem;
+    height: 40px;
+    width: 45%;
+    background-color: #f0f5ff;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+.search-bar i{
+    height: 100%;
+    width: 6%;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    color: #989c9f;
+}
+.search-input{
+    height: 100%;
+    width: 94%;
+    border: none;
+    padding: .5rem 1rem;
+    outline: none;
+    background-color: #f0f5ff;
+    border-radius: 0.5rem;
+    color: #989c9f;
+    font-size: 1rem;
+}
+.navbar-ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.navbar-ul a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+.sellers{
+    padding: 0rem 1.25rem;
+    font-size: 1.25rem;
+}
+.sellers i{
+    margin-right: 0.5rem;
+}
+.account{
+    padding: 0rem 1.25rem;
+    color: #000000;
+    font-size: 1.25rem;
+}
+.account i{
+    margin-right: 0.5rem;
+}
+
+.down-icon{
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0rem;
+}
+.cart{
+    color: #000000;
+    padding: 0rem 1.25rem;
+    font-size: 1.25rem;
+}
+.cart i{
+    margin-right: 0.5rem;
+}
+.sidebar-menu{
+    font-size: 1.25rem;
+    margin-left: 1.5rem;
+    padding: 0.5rem;
+}
+main{
+    position: relative;
+    top: 66px;
+    width: 100%;
+    background-color:#f1f2f4 ;
+}
+.main-container{
+    margin: 0rem 1rem;
+    padding: 0.5rem 0rem 1rem;
+    display: grid;
+    grid-template-areas: 
+    "main1"
+    "main2"
+    "main3"
+    "main4"
+    "main5"
+    "main6";
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6,auto);
+    gap: 1rem;
+}
+.main1{
+    display: flex;
+    grid-area: main1;
+    justify-content: center;
+    background-color: #ffffff;
+}
+.main1-ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.main1-ul a{
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+.main1-anchor1{
+    color: #111112;
+}
+.main1-anchor{
+    color: #333333;
+}
+.inner-main1{
+    height: 126px;
+    width: 130px;
+    padding: 1rem;
+    font-weight: 900;
+}
+.inner-main1 div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: .75rem;
+}
+.inner-main1-first{
+    padding-left: 1.5rem;
+    width: 130px;
+}
+.inner-main1-last{
+    padding-right: 1.5rem;
+    width: 154px;
+}
+.main1-2,.main1-3{
+    width: 122px;
+}
+.main1-6,.main1-7{
+    width: 110px;
+}
+.main1-4{
+    width: 124px;
+}
+.main1-5{
+    width: 170px;
+}
+.main1-8{
+    width: 188px;
+}
+/* set images in right position and width problem */
+.main2{
+    display: flex;
+    height: 222px;
+    width: 100%;
+    background-color: #ffffff;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    grid-area: main2;
+}
+.main2::-webkit-scrollbar{
+    display: none;
+}
+.main2-btn{
+    position: absolute;
+    height: 88px;
+    width: 40px;
+    font-size: 0.75rem;
+    margin: 4.125rem 0 4.125rem;
+    border: none;
+    background-color: #ffffff;
+}
+.main2-btn-right{
+    right: 1rem;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+.main2-btn-left{
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+.main2-ul{
+    display: flex;
+    list-style: none;
+}
+.inner-main2{
+    width: 97.7vw;
+}
+.inner-main2 img{
+    height: 100%;
+    width: 100%;
+}
+.main3{
+    height: 354px;
+    width: 100%;
+    grid-area: main3;
+    background-color: #ffffff;
+}
+.inner-upper-main3{
+    height: 80px;
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: #212121;
+}
+.main3-upper-btn{
+    position: absolute;
+    right: 2rem;
+    font-size: 0.75rem;
+    height:1.5rem ;
+    width: 1.5rem;
+    border: none;
+    color: #ffffff;
+    border-radius: 50%;
+    background-color:#1c41d6 ;
+}
+.inner-lower-main3{
+    width: 100%;
+    display: flex;
+    padding: 0 0.25rem 0.75rem;
+    overflow: hidden;
+}
+.main3-lower-btn{
+    position: absolute;
+    margin: 4rem 0rem;
+    height: 88px;
+    width: 40px;
+    border: none;
+    background-color: #ffffff;
+}
+.main3-lower-btn-left{
+    left: 1rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+.main3-lower-btn-right{
+    right: 1rem;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+.main3-inner{
+    height: 252px;
+    width: 216px;
+    flex-shrink: 0;
+    margin: 0 0.25rem;
+    padding: 0.25rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.25rem;
+}
+.main3-inner a{
+    text-decoration: none;
+    color: #212121;
+    text-align: center;
+    font-weight: 400;
+}
+.main3-inner span{
+    font-weight: 900;
+}
+.main3-img{
+    height: 186px;
+    width: 100%;
+}
+.main3-img img{ 
+height: 100%;
+width: 100%;
+}
+.main3-content{
+    height: 52px;
+    width: 100%;
+    padding-top: 0.75rem;
+    font-size: 0.875rem;
+}
+.main4{
+    grid-area: main4;
+    background-color: #ffffff;
+}
+.main5{
+    grid-area: main5;
+    background-color: #ffffff;
+}
+.main6{
+    grid-area: main6;
+    background-color: #ffffff;
+}
