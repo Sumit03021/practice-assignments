@@ -84,18 +84,57 @@ body::-webkit-scrollbar{
     margin-right: 0.5rem;
 }
 .account{
-    padding: 0rem 1.25rem;
+    margin: 0 1rem;
+    padding: 0.25rem;
     color: #000000;
     font-size: 1.25rem;
 }
 .account i{
     margin-right: 0.5rem;
 }
-
 .down-icon{
     font-size: 1rem;
     margin-left: 0.5rem;
     margin-right: 0rem;
+}
+.account:hover{
+    background-color: #f6f6f6;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.25rem;
+}
+.account:hover .account-hover{
+    display: block;
+}
+.account:hover .down-icon{
+    display: none;
+}
+.up-icon{
+    display: none;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0rem;
+}
+.account:hover .up-icon{
+    display: initial;
+}
+.account-hover{
+    display: none;
+    position: absolute;
+    margin-top: 0.25rem;
+    z-index: 2;
+    background-color: #ffffff;
+    border: 1px solid #f0f0f0;
+}
+.account-hover ul{
+    list-style: none;
+    padding: 0.5rem 1rem 0;
+    font-size: 1rem;
+    line-height: 2rem;
+    cursor: pointer;
+}
+.account-hover a{
+color: #000000;
+font-weight: 400;
 }
 .cart{
     color: #000000;
@@ -109,6 +148,34 @@ body::-webkit-scrollbar{
     font-size: 1.25rem;
     margin-left: 1.5rem;
     padding: 0.5rem;
+}
+.sidebar-menu:hover{
+    background-color: #f0f0f0;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.25rem;
+}
+.sidebar-menu:hover .menu-hover{
+    display: block;
+}
+.menu-hover{
+    display: none;
+    position: absolute;
+    right: 3.75rem;
+    margin-top: 0.25rem;
+    background-color: #ffffff;
+    z-index: 2;
+    border: 1px solid #f0f0f0;
+}
+.menu-hover ul{
+list-style: none;
+padding: 0.5rem 1rem 0;
+line-height: 2rem;
+font-size: 1rem;
+cursor: pointer;
+}
+.menu-hover a{
+    color: #000000;
+    font-weight: 400;
 }
 main{
     position: relative;
@@ -124,11 +191,15 @@ main{
     "main1"
     "main2"
     "main3"
+    "ads1"
     "main4"
+    "brand1"
+    "ads2"
     "main5"
-    "main6";
+    "brand2"
+    "ads3";
     grid-template-columns: 100%;
-    grid-template-rows: repeat(6,auto);
+    grid-template-rows: repeat(10,auto);
     gap: 1rem;
 }
 .main1{
@@ -141,15 +212,11 @@ main{
     display: flex;
     align-items: center;
     list-style: none;
+    text-align: center;
 }
 .main1-ul a{
     text-decoration: none;
     font-size: 0.875rem;
-}
-.main1-anchor1{
-    color: #111112;
-}
-.main1-anchor{
     color: #333333;
 }
 .inner-main1{
@@ -169,22 +236,19 @@ main{
 }
 .inner-main1-last{
     padding-right: 1.5rem;
-    width: 154px;
+    width: 130px;
 }
-.main1-2,.main1-3{
+.main1-2{
+    width: 153px;
+}
+.main1-3,.main1-5,.main1-6,.main1-8,.main1-9{
     width: 122px;
 }
-.main1-6,.main1-7{
-    width: 110px;
+.main1-7{
+    width: 140px;
 }
 .main1-4{
-    width: 124px;
-}
-.main1-5{
-    width: 170px;
-}
-.main1-8{
-    width: 188px;
+    width: 151px;
 }
 /* set images in right position and width problem */
 .main2{
@@ -240,6 +304,8 @@ main{
     font-size: 1.25rem;
     font-weight: 900;
     color: #212121;
+    display: flex;
+    align-items: center;
 }
 .main3-upper-btn{
     position: absolute;
@@ -265,6 +331,7 @@ main{
     width: 40px;
     border: none;
     background-color: #ffffff;
+    z-index: 2;
 }
 .main3-lower-btn-left{
     left: 1rem;
@@ -282,7 +349,7 @@ main{
     flex-shrink: 0;
     margin: 0 0.25rem;
     padding: 0.25rem;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #dddddd;
     border-radius: 0.25rem;
 }
 .main3-inner a{
@@ -298,27 +365,141 @@ main{
     height: 186px;
     width: 100%;
 }
+.main3-img:hover img{
+    transform: scale(0.9);
+}
 .main3-img img{ 
 height: 100%;
 width: 100%;
+transform: scale(0.8);
 }
 .main3-content{
     height: 52px;
     width: 100%;
-    padding-top: 0.75rem;
+    padding-top: 1.5rem;
     font-size: 0.875rem;
+}
+.ads1{
+    grid-area: ads1;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3,33%);
+    background-color: #ffffff;
+    gap: 0.5rem; 
+}
+.inner-ads1{
+    width:100%;
+}
+.ads1-img{
+    width: 100%;
+}
+.ads1-img img{
+    height: 100%;
+    width: 100%;
 }
 .main4{
     grid-area: main4;
     background-color: #ffffff;
 }
+.brand1{
+    width: 100%;
+    grid-area: brand1;
+    background-color: #ffffff;
+    padding: 0 0.25rem;
+}
+.inner-upper-brand{
+    height: 80px;
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: #212121;
+    display: flex;
+    align-items: center;
+}
+.inner-lower-brand{
+    width: 100%;
+    display: flex;
+    overflow:hidden;
+}
+.brand-lower-btn{
+    position: absolute;
+    margin: 4rem 0rem;
+    height: 88px;
+    width: 40px;
+    border: none;
+    background-color: #ffffff;
+}
+.brand-lower-btn-left{
+    left: 1.75rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+.brand-lower-btn-right{
+    right: 1rem;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+.brand-inner{
+    height: 266px;
+    width: 450px;
+    flex-shrink: 0;
+    margin: 0 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+.brand-inner a{
+    cursor: pointer;
+}
+.brand-img{
+    height: 266px;
+    width: 435px;
+}
+.brand-img img{ 
+height: 100%;
+width: 100%;
+}
+.ads2{
+    grid-area: ads2;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3,33%);
+    background-color: #ffffff;
+    gap: 0.5rem; 
+}
+.inner-ads2{
+    width:100%;
+}
+.ads2-img{
+    width: 100%;
+}
+.ads2-img img{
+    height: 100%;
+    width: 100%;
+}
 .main5{
     grid-area: main5;
     background-color: #ffffff;
 }
-.main6{
-    grid-area: main6;
+.brand2{
+    grid-area: brand2;
     background-color: #ffffff;
+}
+.ads3{
+    grid-area: ads3;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3,33%);
+    background-color: #ffffff;
+    gap: 0.5rem; 
+}
+.inner-ads3{
+    width:100%;
+}
+.ads3-img{
+    width: 100%;
+}
+.ads3-img img{
+    height: 100%;
+    width: 100%;
 }
 footer{
     position: relative;
