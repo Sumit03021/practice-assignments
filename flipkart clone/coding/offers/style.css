@@ -237,7 +237,6 @@ cursor: pointer;
     display: flex;
 }
 .inner-popup{
-    height: 500px;
     width: 20%;
     padding: 1rem;
     line-height: 1.5rem;
