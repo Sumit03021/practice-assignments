@@ -4,9 +4,1339 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <div class="flipkart-upper-logo">
+                    <span>Flipkart</span>
+                </div>
+                <div class="flipkart-lower-logo">
+                    <span>join</span>
+                    <span style="color: #ffc200;">plus</span>
+                    <i class="fa-solid fa-plus" style="color: #ffc200;"></i>
+                </div>
+            </div>
+            <div class="search-bar">
+                <input class="search-input" type="text" placeholder="Search for Products, Brands and More">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <ul class="navbar-ul">
+                <li>
+                    <div class="account">
+                        <a href="">
+                            <i class="fa-regular fa-user" style="color: #ffffff;"></i>
+                            <span>My Account</span>
+                            <i class="down-icon fa-solid fa-chevron-down" style="color: #ffffff;"></i>
+                            <i class="up-icon fa-solid fa-chevron-up" style="color: #ffffff;"></i>
+                        </a>
+                        <div class="account-hover">
+                            <ul>
+                                <li>
+                                    <div>
+                                        <a href="">
+                                            <i class="fa-regular fa-user"></i>
+                                            <span>My Profile</span>
+                                        </a>
+                                    </div>
+                                </li>
+                            
+                                <li>
+                                    <div>
+                                        <a href="">
+                                            <i class="fa-solid fa-coins"></i>
+                                            <span>Supercoin Zone</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <div>
+                                        <a href="">
+                                            <i class="fa-regular fa-plus"></i>
+                                            <span>Flipcart Plus Zone</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <div>
+                                        <a href="">
+                                            <i class="fa-solid fa-box-archive"></i>
+                                            <span>Orders</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <div>
+                                        <a href="">
+                                            <i class="fa-regular fa-heart"></i>
+                                            <span>Wishlists</span>
+                                        </a>
+                                    </div>
+                                </li>
+                            
+                                <li>
+                                    <div>
+                                        <a href="">
+                                            <i class="fa-solid fa-tag"></i>
+                                            <span>Coupons</span>
+                                        </a>
+                                    </div>
+                                </li>
+                            
+                                <li>
+                                    <div>
+                                        <a href="">
+                                            <i class="fa-solid fa-gift"></i>
+                                            <span>Gift Cards</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <div>
+                                        <a href="">
+                                            <i class="fa-regular fa-bell"></i>
+                                            <span>Notifications</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <a href="">
+                                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                            <span>Log Out</span>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sellers">
+                        <a href="">
+                            <span>Become a Seller</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="sidebar-menu">
+                       <span>More</span>
+                       <i class="more-down fa-solid fa-chevron-down"></i>
+                       <i class="more-up fa-solid fa-chevron-up"></i>
+                        <div class="menu-hover">
+                            <ul>
+                                <li>
+                                    <div>
+                                        <a href="">
+                                            <i class="fa-regular fa-bell"></i>
+                                            <span>Notification Preferences</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <a href="">
+                                            <i class="fa-solid fa-headphones"></i>
+                                            <span>24*7 Customer Care</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <a href="">
+                                            <i class="fa-solid fa-arrow-trend-up"></i>
+                                            <span>Advertise</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <a href="">
+                                            <i class="fa-solid fa-download"></i>
+                                            <span>Download App</span>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="cart">
+                        <a href="">
+                            <i class="fa-solid fa-cart-plus" style="color: #ffffff;"></i>
+                            <span>Cart</span>
+                        </a>
+                    </div>
+                </li>
+               
+            </ul>
+        </div>
+        <div class="navbar-panel">
+            <div class="inner-navbar-panel">
+                <span>Electronics</span>
+                <i class="panel-down fa-solid fa-chevron-down"></i>
+                <i class="panel-up fa-solid fa-chevron-up"></i>
+                <div class="outer-popup-panel">
+                    <div class="popup-panel">
+                        <div class="inner-popup">
+                            <ul>
+                                <li>
+                                    <a class="panel-anchor-head" href="">Mobiles</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i>
+                                </li>
+                                <li><a class="panel-anchor-subhead" href="">Mi</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Realme</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Samsung</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Infinix</a></li>
+                                <li><a class="panel-anchor-subhead" href="">OPPO</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Apple</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Vivo</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Honor</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Asus</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Poco X2</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Realme Narzo 10</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Infinix Hot 9</a></li>
+                                <li><a class="panel-anchor-subhead" href="">IQOO 3</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Iphone SE</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Motorola Razr</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Realme Narzo 10A</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Motorola G8 Power Lite</a></li>
+                            </ul>
+                        </div>
+                        <div class="inner-popup inner-popup1">
+                            <ul>
+                                <li>
+                                    <a class="panel-anchor-head" href="">Mobile Accessories</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i>
+                                </li>
+                                <li><a class="panel-anchor-subhead" href="">Headphones & Headsets</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Power Banks</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Screenguards</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Memory Cards</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Smart Headphones</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Mobile Cables</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Mobile Chargers</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Mobile Holders</a></li>
+                                <li><a class="panel-anchor-head" href="">Smart Wearable Tech</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Smart Watches</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Smart Glasses (VR)</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Smart Bands</a></li>
+                                <li><a class="panel-anchor-head" href="">Health Care Appliances</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Bp Monitors</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Weighing Scale</a></li>
+                            </ul>
+                        </div>
+                        <div class="inner-popup">
+                            <ul>
+                                <li><a class="panel-anchor-head" href="">Laptops</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Gaming Laptops</a></li>
+                                <li><a class="panel-anchor-head" href="">Desktop PC's</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-head" href="">Gaming & Accessories</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-head" href="">Computer Accessories</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">External Hard Disks</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Pendrives</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Laptop Skins & Decals</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Laptop Bags</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Mouse</a></li>
+                                <li><a class="panel-anchor-head" href="">Computer Peripherals</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Printers & Ink Cartridges</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Monitors</a></li>
+                                <li><a class="panel-anchor-head" href="">Tablets</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Apple iPads</a></li>
+                            </ul>
+                        </div>
+                        <div class="inner-popup inner-popup1">
+                            <ul>
+                                <li><a class="panel-anchor-head" href="">Televisions</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-head" href="">Speakers</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Home Audio Speakers</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Home Theatres</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Soundbars</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Bluetooth Speakers</a></li>
+                                <li><a class="panel-anchor-subhead" href="">DTH Set Top Box</a></li>
+                                <li><a class="panel-anchor-head" href="">Smart Home Automation</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Google Nest</a></li>
+                                <li><a class="panel-anchor-head" href="">Camera</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">DSLR & Mirrorless</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Compact & Bridge Cameras</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Sports & Action</a></li>
+                                <li><a class="panel-anchor-head" href="">Camera Accessories</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Lens</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Tripods</a></li>
+                                <li><a class="panel-anchor-head" href="">Network Components</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Routers</a></li>
+                            </ul>
+                        </div>
+                        <div class="inner-popup">
+                            <ul>
+                                <li><a class="panel-anchor-head" href="">Featured</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Google Assistant Store</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Laptops on Buyback Guarantee</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Flipkart SmartBuy</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Li-Polymer Power Banks</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Sony PS4 Pro & Slim</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Apple Products</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Microsoft Store</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Lenovo Phab Series</a></li>
+                                <li><a class="panel-anchor-subhead" href="">JBL Speakers</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Smartphones on BuyBack Guarantee</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Philips</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Dr. Morepen</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Complete Mobile Protection</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Mobiles No Cost EMI</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Huawei Watch Gt 2E Smart Watch</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="inner-navbar-panel">
+                <span>TV & Appliances</span>
+                <i class="panel-down fa-solid fa-chevron-down"></i>
+                <i class="panel-up fa-solid fa-chevron-up"></i>
+                <div class="outer-popup-panel">
+                    <div class="popup-panel">
+                        <div class="inner-popup">
+                            <ul>
+                                <li>
+                                    <a class="panel-anchor-head" href="">Television</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i>
+                                </li>
+                                <li><a class="panel-anchor-head" href="">New Launches</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-head" href="">Smart & Ultra HD</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-head" href="">Top Brands</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Mi</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Vu</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Thomson</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Samsung</a></li>
+                                <li><a class="panel-anchor-subhead" href="">iFFALCON by TCL</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Nokia</a></li>
+                                <li><a class="panel-anchor-subhead" href="">LG</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Realme</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Motorola</a></li>
+                                <li><a class="panel-anchor-head" href="">Shop by Screen Size</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">24 & below</a></li>
+                                <li><a class="panel-anchor-subhead" href="">28 -32</a></li>
+                                <li><a class="panel-anchor-subhead" href="">39 - 43</a></li>
+                                <li><a class="panel-anchor-subhead" href="">48 -55</a></li>
+                                <li><a class="panel-anchor-subhead" href="">60 & above</a></li>
+                            </ul>
+                        </div>
+                        <div class="inner-popup inner-popup1">
+                            <ul>
+                                <li>
+                                    <a class="panel-anchor-head" href="">Washing Machine</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i>
+                                </li>
+                                <li><a class="panel-anchor-subhead" href="">Fully Automatic Front load</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Semi Automatic Top load</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Fully Automatic Top load</a></li>
+                                <li><a class="panel-anchor-head" href="">Air Conditioners</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Inverter AC</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Split AC's</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Window AC's</a></li>
+                                <li><a class="panel-anchor-head" href="">Shop By Brands</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">LG</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Hitachi</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Carrier</a></li>
+                                <li><a class="panel-anchor-head" href="">Refrigerators</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Single Door</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Double Door</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Triple Door</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Side By Side</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Convertible</a></li>
+                            </ul>
+                        </div>
+                        <div class="inner-popup">
+                            <ul>
+                                <li><a class="panel-anchor-head" href="">Kitchen Appliances</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Microwave Ovens</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Over Toaster Grills (OTG)</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Juicer/Mixer/Grinder</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Electric Kettle</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Induction Cooktops</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Chimneys</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Hand Blenders</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Sandwich Makers</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Pop Up Toasters</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Electric Cookers</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Wet Grinders</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Food Processors</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Coffee Makers</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Dishwashers</a></li>
+                                <li><a class="panel-anchor-head" href="">Healthy Living Appliances</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                            </ul>
+                        </div>
+                        <div class="inner-popup inner-popup1">
+                            <ul>
+                                <li><a class="panel-anchor-head" href="">Small Home Appliances</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Irons</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Wter Purifiers</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Fans</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Air Coolers</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Inverters</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Vacuum Cleaners</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Sewing Machines</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Voltage Stabilizers</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Water Geysers</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Immeersion Rods</a></li>
+                                <li><a class="panel-anchor-head" href="">Top Brands</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li></li>
+                                <li><a class="panel-anchor-subhead" href="">Livpure</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Philips</a>
+                                <li><a class="panel-anchor-subhead" href="">Bajaj</a></li>
+                                <li><a class="panel-anchor-subhead" href="">IFB</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Eureka Forbes</a>
+                                <li><a class="panel-anchor-subhead" href="">Kaff</a></li>
+                            </ul>
+                        </div>
+                        <div class="inner-popup">
+                            <ul>
+                                <li><a class="panel-anchor-head" href="">Buying Guides</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Televisions</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Washing Machines</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Refrigerators</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Air Conditioners</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Water Purifiers</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Air Purifiers</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Chimneys</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Water Geysers</a></li>
+                                <li><a class="panel-anchor-head" href="">New Launches</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Coocaa Smart TVs</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Nokia (55) 4K Android TV</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Mi (32) 4A Pro Android TV</a></li>
+                                <li><a class="panel-anchor-subhead" href="">MarQ (43) FHD Smart TV</a></li>
+                                <li><a class="panel-anchor-subhead" href="">LG Refrigerators</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Thomson (40) 4K Smart TV</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Whirlpool Refrigerators</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Kodak (22) | (32) 4K LED TVs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-navbar-panel">
+                <span>Men</span>
+                <i class="panel-down fa-solid fa-chevron-down"></i>
+                <i class="panel-up fa-solid fa-chevron-up"></i>
+                <div class="outer-popup-panel">
+                    <div class="popup-panel">
+                        <div class="inner-popup">
+                            <ul>
+                                <li>
+                                    <a class="panel-anchor-head" href="">Footwear</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i>
+                                </li>
+                                <li><a class="panel-anchor-subhead" href="">Sports Shoes</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Casual Shoes</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Formal Shoes</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Sandals & Floaters</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Loafers</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Boats</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Running Shoes</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Sneakers</a></li>
+                                <li><a class="panel-anchor-head" href="">Men's Grooming</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Deodorants</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Perfumes</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Beard Care & Grooming</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Shaving & Aftershave</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Sexual Wellness</a></li>
+                            </ul>
+                        </div>
+                        <div class="inner-popup inner-popup1">
+                            <ul>
+                                <li>
+                                    <a class="panel-anchor-head" href="">Clothing</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i>
+                                </li>
+                                <li><a class="panel-anchor-head" href="">Top Wear</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">T-Shirts</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Formal Shirts</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Casual Shirts</a></li>
+                                <li><a class="panel-anchor-head" href="">Bottom Wear</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Jeans</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Casual Trousers</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Formal Trousers</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Track Pants</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Shorts</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Cargos</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Three Fourths</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Suits, Blazzers & Waistcoats</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Ties, Socks, Caps & More</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Fabrics</a></li>
+                            </ul>
+                        </div>
+                        <div class="inner-popup">
+                            <ul>
+                                <li><a class="panel-anchor-head" href="">Winter Wear</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Sweatshirts</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Jackets</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Tracksuits</a></li>
+                                <li><a class="panel-anchor-head" href="">Ethnic Wear</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Kurtas</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Ethnic Sets</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Sherwanis</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Ethnic Pyjama</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Dhoti</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Lungi</a></li>
+                                <li><a class="panel-anchor-head" href="">Innerwear & Loungewear</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Briefs & Trunks</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Vests</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Boxers</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Pyjamas and Lounge Pants</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Thermals</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Night Suits</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Raincoats & Windcheaters</a></li>
+                            </ul>
+                        </div>
+                        <div class="inner-popup inner-popup1">
+                            <ul>
+                                <li><a class="panel-anchor-head" href="">Watches</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Fastrack</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Casio</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Titan</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Fossil</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Sonata</a></li>
+                                <li><a class="panel-anchor-head" href="">Accessories</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i>
+                                </li>
+                                <li><a class="panel-anchor-subhead" href="">Backpacks</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Wallets</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Belts</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Sunglasses</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Luggage & Travel</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Frames</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Jewellery</a></li>
+                                <li><a class="panel-anchor-head" href="">Sports & Fitness Store</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                            </ul>
+                        </div>
+                        <div class="inner-popup">
+                            <ul>
+                                <li><a class="panel-anchor-subhead" href="">Smart Watches</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Smart Bands</a></li>
+                                <li><a class="panel-anchor-head" href="">Personal Care Appliances</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Trimmers</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Shavers</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Grooming Kits</a></li>
+                                <li><a class="panel-anchor-head" href="">Featured</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Watches Store</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Footwear Club</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Bag & Wallet</a></li>
+                                <li><a class="panel-anchor-head" href="">T-Shirts Store</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Adidas</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Beardo</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Reebok</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Skechers</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Nike</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-navbar-panel">
+                <span>Women</span>
+                <i class="panel-down fa-solid fa-chevron-down"></i>
+                <i class="panel-up fa-solid fa-chevron-up"></i>
+                <div class="outer-popup-panel">
+                    <div class="popup-panel">
+                        <div class="inner-popup">
+                            <ul>
+                                <li>
+                                    <a class="panel-anchor-head" href="">Clothing</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i>
+                                </li>
+                                <li><a class="panel-anchor-subhead" href="">Women Western & Maternity Wear</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Top Wear</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Dresses</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Jeans</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Shorts</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Skirts</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Jeggings & Tights</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Trousers & Capris</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Lingerie & Sleepwear</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Bras</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Panties</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Lingerie Sets</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Night Dresses & Nighties</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Shapewear</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Camisoles & Slips</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Swim & Beachwear</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Party Dresses</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Sports Wear</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Winter Wear</a></li>
+                            </ul>
+                        </div>
+                        <div class="inner-popup inner-popup1">
+                            <ul>
+                                <li>
+                                    <a class="panel-anchor-head" href="">Ethnic Wear</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i>
+                                </li>
+                                <li><a class="panel-anchor-subhead" href="">Sarees</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Kurtas & Kurtis</a></li>
+                                <li><a class="panel-anchor-head" href="">Dress Material</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i>
+                                </li>
+                                <li><a class="panel-anchor-subhead" href="">Lehenga Choli</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Blouse</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Kurta Sets & Salwar Suits</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Gowns</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Dupattas</a></li>
+                                <li><a class="panel-anchor-head" href="">Ethnic Bottoms</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Leggings & Churidars</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Palazzos</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Shararas</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Salwar & Patiala</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Dhoti Pants</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Ethnic Trousers</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Saree Shapewear & Petticoats</a></li>
+                            </ul>
+                        </div>
+                        <div class="inner-popup">
+                            <ul>
+                                <li><a class="panel-anchor-head" href="">Footwear</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Sandals</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Flats</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Heals</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Wedges</a></li>
+                                <li><a class="panel-anchor-head" href="">Shoes</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i>
+                                </li>
+                                <li><a class="panel-anchor-subhead" href="">Sports Shoes</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Casual Shoes</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Boots</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Ballerinas</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Slippers & Flip-Flops</a></li>
+                                <li><a class="panel-anchor-head" href="">Watches</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Smart Watches</a></li>
+                                <li><a class="panel-anchor-head" href="">Personal Care Appliances</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Hair Straightners</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Hair Dryers</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Epilators</a></li>
+                            </ul>
+                        </div>
+                        <div class="inner-popup inner-popup1">
+                            <ul>
+                                <li><a class="panel-anchor-head" href="">Beauty & Grooming</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Make Up</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Skin Care</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Hair Care</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Bath & Spa</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Deodorants & Perfumes</a></li>
+                                <li><a class="panel-anchor-head" href="">Jewellery</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Artificial Jewellery</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Silver Jewellery</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Precious Jewellery</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Coins & Bars</a></li>
+                                <li><a class="panel-anchor-head" href="">Accessories</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Handbags</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Shoulder Bags</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Totes</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Sling Bags</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Clutches</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Wallets & Belts</a></li>
+                                <li><a class="panel-anchor-head" href="">Luggage & Travel</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Sunglasses</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Frames</a></li>
+                            </ul>
+                        </div>
+                        <div class="inner-popup">
+                            <ul>
+                                <li><a class="panel-anchor-head" href="">Featured</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Forever 21</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Accessories</a></li>
+                                <li><a class="panel-anchor-head" href="">Women Brands</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Pantaloons</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Chemistry</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Lakme</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Nivea</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Catwalk</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Titan-Raga</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Fastrack</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Divastri</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Rare Roots</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Anmi</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Coins & Bars</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Crocs</a></li>
+                                <li><a class="panel-anchor-head" href="">Trending Todays !</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Ruffles & Frills</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Pastel Kurtas & Kurtis</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Designer Net Sarees</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-navbar-panel">
+                <span>Baby & Kids</span>
+                <i class="panel-down fa-solid fa-chevron-down"></i>
+                <i class="panel-up fa-solid fa-chevron-up"></i>
+                <div class="outer-popup-panel">
+                    <div class="popup-panel">
+                        <div class="inner-popup">
+                            <ul>
+                                <li>
+                                    <a class="panel-anchor-head" href="">Kids Clothing</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i>
+                                </li>
+                                <li><a class="panel-anchor-head" href="">Boys' Clothing</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">T-Shirts</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Shorts</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Shirts</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Innerwear</a></li>
+                                <li><a class="panel-anchor-head" href="">Girls' Clothing</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Dresses & Skirts</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Ethnic Wear</a></li>
+                                <li><a class="panel-anchor-subhead" href="">T-shirts & Tops</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Innerwear</a></li>
+                                <li><a class="panel-anchor-head" href="">Baby Boys' Clothing</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Combos Sets</a></li>
+                                <li><a class="panel-anchor-subhead" href="">T-Shirts</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Innerwear</a></li>
+                                <li><a class="panel-anchor-head" href="">Baby Girls' Clothing</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Combos Sets</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Dresses & Gowns</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Innerwear</a></li>
+                            </ul>
+                        </div>
+                        <div class="inner-popup inner-popup1">
+                            <ul>
+                                <li>
+                                    <a class="panel-anchor-head" href="">Kids' Footwear</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i>
+                                </li>
+                                <li><a class="panel-anchor-head" href="">Boys' Footwear</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Sandals</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Sport Shoes</a></li>
+                                <li><a class="panel-anchor-head" href="">Girls' Footwear</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Flats & Bellies</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Sport Shoes</a></li>
+                                <li><a class="panel-anchor-head" href="">Infant Footwear</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Character Shoes</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Kids' Watches</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Kids' Sunglasses</a></li>
+                                <li><a class="panel-anchor-head" href="">Kids' Winter Wear</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-head" href="">Boys' Winter Wear</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Boys' Sweatshirts</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Boys' Jacket</a></li>
+                                <li><a class="panel-anchor-head" href="">Girls' Winter Wear</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Girls' Sweatshirts</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Girls' Jackets</a></li>
+                                <li><a class="panel-anchor-head" href="">Infant Winter Wear</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Thermals</a></li>
+                            </ul>
+                        </div>
+                        <div class="inner-popup">
+                            <ul>
+                                <li><a class="panel-anchor-head" href="">Toys</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Remote Control Toys</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Educational Toys</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Soft Toys</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Cars & Die-cast Vehicles</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Outdoor Toys</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Action Figures</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Board Games</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Musical Toys</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Dolls & Doll Houses</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Puzzles</a></li>
+                                <li><a class="panel-anchor-subhead" href="">S.T.E.M Toys</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Helicopter & Drones</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Toy Guns</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Party Supplies</a></li>
+                                <li><a class="panel-anchor-subhead" href="">School Supplies</a></li>
+                                <li><a class="panel-anchor-subhead" href="">School Bags</a></li>
+                                <li><a class="panel-anchor-subhead" href="">School Combo Sets</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Lunch Box</a></li>
+                            </ul>
+                        </div>
+                        <div class="inner-popup inner-popup1">
+                            <ul>
+                                <li><a class="panel-anchor-head" href="">Baby Care</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Diapers</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Wipes</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Diapering & Potty Training</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Baby Bath, Hair & Skin Care</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Baby Grooming</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Baby Bathing Accessories</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Baby Gift Sets & Combo</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Baby Oral Care</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Nursing & Breast Feeding</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Baby Food</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Baby Feeding Bottle & Accessories</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Baby Feeding Utensils & Accessories</a></li>
+                                <li><a class="panel-anchor-subhead" href="">by Bedding</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Baby Gear</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Baby Medical & Health Care</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Baby Proofing & Safety</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Baby Cleaners & Detergents</a></li>
+                            </ul>
+                        </div>
+                        <div class="inner-popup">
+                            <ul>
+                                <li><a class="panel-anchor-head" href="">Featured brands</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Miss & Chief</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Barbie</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Disney</a></li>
+                                <li><a class="panel-anchor-subhead" href="">United Colors of Benetton</a></li>
+                                <li><a class="panel-anchor-subhead" href="">The Children's Place</a></li>
+                                <li><a class="panel-anchor-subhead" href="">US Polo</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Flying Machine</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Crocs</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Puma</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Funskool</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Lego</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Luvlap</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Mamy Poko</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Mee Mee</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-navbar-panel">
+                <span>Home & Furniture</span>
+                <i class="panel-down fa-solid fa-chevron-down"></i>
+                <i class="panel-up fa-solid fa-chevron-up"></i>
+                <div class="outer-popup-panel">
+                    <div class="popup-panel">
+                        <div class="inner-popup">
+                            <ul>
+                                <li>
+                                    <a class="panel-anchor-head" href="">Kitchen, Cookware & Serveware</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i>
+                                </li>
+                                <li><a class="panel-anchor-subhead" href="">Pans</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Tawas</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Pressure Cookers</a></li>
+                                <li><a class="panel-anchor-head" href="">Kitchen Tools</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Gas Stoves</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Tableware & Dinnerware</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Coffee Mugs</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Dinner Sets</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Barware</a></li>
+                                <li><a class="panel-anchor-head" href="">Kitchen Storage</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Water Bottles</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Lunch Boxes</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Flasks</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Casseroles</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Kitchen Containers</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Cleaning Supplies</a></li>
+                            </ul>
+                        </div>
+                        <div class="inner-popup inner-popup1">
+                            <ul>
+                                <li>
+                                    <a class="panel-anchor-head" href="">Furniture Top Offers</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i>
+                                </li>
+                                <li><a class="panel-anchor-head" href="">Bed Room Furniture</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Beds</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Mattresses</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Wardrobes</a></li>
+                                <li><a class="panel-anchor-head" href="">Living Room Furniture</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Sofa Beds</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Sofa</a></li>
+                                <li><a class="panel-anchor-subhead" href="">TV Units</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Dining Tables & Chairs</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Coffee Tables</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Shoe Racks</a></li>
+                                <li><a class="panel-anchor-head" href="">Office & Study Furniture</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-head" href="">Kids Room Furniture</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">DIY Furniture</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Bean Bags</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Collapsible Wardrobes</a></li>
+                            </ul>
+                        </div>
+                        <div class="inner-popup">
+                            <ul>
+                                <li><a class="panel-anchor-head" href="">Furnishing</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Bedsheets</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Curtains</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Cushions & Pillows</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Blankets</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Bath Towels</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Kitchen & Table Linen</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Floor Coverings</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Smart Home Automation</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Smart Security System</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Smart Door Locks</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Home Improvement</a></li>
+                                <li><a class="panel-anchor-head" href="">Tools & Measuring Equipments</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-head" href="">Home Utilities & Organizers</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Lawn & Gardening</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Bathroom & Kitchen Fittings</a></li>
+                            </ul>
+                        </div>
+                        <div class="inner-popup inner-popup1">
+                            <ul>
+                                <li><a class="panel-anchor-head" href="">Home Decor</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Paintings</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Clocks</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Wall Shelves</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Stickers</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Showpieces & Figurines</a></li>
+                                <li><a class="panel-anchor-head" href="">Home Lighting</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Bulbs</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Wall Lamp</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Table Lamp</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Ceiling lamps</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Emergency Lamp</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Festive Decor & Gifts</a></li>
+                                <li><a class="panel-anchor-head" href="">Pet Supplies</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Dogs</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Cats</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Fish & Aquatics</a></li>
+                            </ul>
+                        </div>
+                        <div class="inner-popup">
+                            <ul>
+                                <li><a class="panel-anchor-head" href="">Durability Certified Furniture</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-head" href="">Featured</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Christmas Store</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Mugs Store</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Gardening Store</a></li>
+                                <li><a class="panel-anchor-head" href="">Stainless Steel Store</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Milton</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Bombay Dyeing</a></li>
+                                <li><a class="panel-anchor-subhead" href="">@home</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Home Town</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Ajanta</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Spaces By Welspun</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Prestige</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Perfect Home Store</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-navbar-panel">
+                <span>Sports, Books & More</span>
+                <i class="panel-down fa-solid fa-chevron-down"></i>
+                <i class="panel-up fa-solid fa-chevron-up"></i>
+                <div class="outer-popup-panel">
+                    <div class="popup-panel">
+                        <div class="inner-popup">
+                            <ul>
+                                <li>
+                                    <a class="panel-anchor-head" href="">Sports</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i>
+                                </li>
+                                <li><a class="panel-anchor-subhead" href="">Cricket</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Badminton</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Cycling</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Football</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Skating</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Camping & Hiking</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Swimming</a></li>
+                                <li><a class="panel-anchor-head" href="">Exercise Fitness</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Cardio Equipment</a></li>
+                                <li><a class="panel-anchor-head" href="">Home Gyms</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Support</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Dumbbells</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Ab Exercisers</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Shakers & Slippers</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Yoga Mat</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Gym Gloves</a></li>
+                            </ul>
+                        </div>
+                        <div class="inner-popup inner-popup1">
+                            <ul>
+                                <li>
+                                    <a class="panel-anchor-head" href="">Food Essentials</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i>
+                                </li>
+                                <li><a class="panel-anchor-subhead" href="">Nuts & Dry Fruits</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Tea, Coffee and Beverages</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Chocolates</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Snacks Corner</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Gifting Combos</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Sweets Store</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Jams, Spreads and Honey</a></li>
+                                <li><a class="panel-anchor-head" href="">Breakfast Items</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-head" href="">Health Nutrition</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-head" href="">All Supplements</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Protein Supplements</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Vitamin Supplements</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Health Drinks</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Ayurvedic Supplements</a></li>
+                            </ul>
+                        </div>
+                        <div class="inner-popup">
+                            <ul>
+                                <li><a class="panel-anchor-head" href="">Books</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Entrance Exams</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Academics</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Literature & Fiction</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Non Fiction</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Young Readers</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Self Help</a></li>
+                                <li><a class="panel-anchor-subhead" href="">E-learning</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Preorders</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Indian Languages</a></li>
+                                <li><a class="panel-anchor-head" href="">Stationery</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Pens</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Diaries</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Card Holders</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Desk Organizers</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Calculators</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Key Chains</a></li>
+                            </ul>
+                        </div>
+                        <div class="inner-popup inner-popup1">
+                            <ul>
+                                <li><a class="panel-anchor-head" href="">Auto Accessories</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Helmets & Riding Gears</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Car Audio/Video</a></li>
+                                <li><a class="panel-anchor-head" href="">Car Mobile Accessories</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Car & Bike Care</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Vehicle Lubricants</a></li>
+                                <li><a class="panel-anchor-head" href="">Industrial & Scientific tools</a>
+                                <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Industrial Measurement Devices</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Industrial Testing Devices</a></li>
+                                <li><a class="panel-anchor-head" href="">Lab & Scientific Products</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Packaging & Shipping Products</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Safety Products</a></li>
+                                <li><a class="panel-anchor-head" href="">Medical Supplies</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Pregnancy and Fertility Kits</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Hot Water Bag</a></li>
+                            </ul>
+                        </div>
+                        <div class="inner-popup">
+                            <ul>
+                                <li><a class="panel-anchor-head" href="">Music</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-head" href="">Musical Instruments</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Music</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Movies & TV shows</a></li>
+                                <li><a class="panel-anchor-head" href="">Gaming</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">Gaming Consoles</a></li>
+                                <li><a class="panel-anchor-head" href="">Gaming Accessories</a>
+                                    <i class="fa-solid fa-caret-right" style="color: #878787;"></i></li>
+                                <li><a class="panel-anchor-subhead" href="">PS4 Games</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Smart Glasses (VR)</a></li>
+                                <li><a class="panel-anchor-subhead" href="">Grocery (Only In Select Cities)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-navbar-panel">
+                <span>Flights</span>
+            </div>
+            <div class="inner-navbar-panel">
+                <span>Offers Zone</span>
+            </div>
+            <div class="inner-navbar-panel">
+                <span>Grocery</span>
+            </div>
+        </div>
+    </header>
     
+    <footer>
+        <div class="footer1">
+            <p><b>Best Offers &amp; Discounts</b>
+                <br>
+                <br>
+                The festive season is right around the corner and that can only mean one thing: discounts, discounts and
+                discounts. Renovate your home, upgrade your wardrobe or gift a loved one: our special discounts will
+                make it hard for you to resist picking more than just one product. What will be part of the offers?
+                <br>
+                <br>
+                From time-saving large appliances like washing machines, TVs and refrigerators, latest mobile phones,
+                kitchen appliances like juicer mixer grinders;
+                <a href="">dining tables</a>, wardrobes,
+                <a href="">sofa sets</a>&nbsp;, air purifiers and other home essentials, photo frames, wall hangings,
+                showpieces and other home decor,&nbsp; grooming and make-up kits, sports equipment, best-selling fiction
+                and non fiction books and wardrobe staples are part of the exciting sale.&nbsp;
+            </p>
+            <p>Check out top fashion deals in Fashion <a href="">EOSS sale</a> on
+                <a href="">sarees</a>,
+                <a href="">kurtis</a>,
+                <a href="">tops</a>,
+                <a href="">bra</a>,
+                <a href="">dresses</a>,
+                <a href="">skirt</a>,
+                <a href="">lehenga</a>,
+                <a href="">shorts</a>,
+                <a href="">t-shirts</a>,
+                <a href="">shirts</a>,
+                <a href="">raincoat</a>,
+                <a href="">watches</a>,
+                <a href="">backpacks</a>,
+                <a href="">wallets</a>&nbsp;,
+                <a href=""> earrings</a>&nbsp;,
+                <a href="">handbags</a>&nbsp;,
+                <a href="">&nbsp;</a>
+                <a href="">jackets</a>,
+                <a href="">sweaters</a>,
+                <a href="">sweatshirts</a>,
+                <a href="">thermals</a> &amp; much more.
+            </p>
+            <p>Also, explore our great deals on our <a href="">Grocery </a>items.</p>
+            <p>So get started right away!<br>&nbsp;</p>
+        </div>
+        <div class="footer2">
+            <div class="inner-footer2 inner-footera">
+                <table>
+                    <tr>
+                        <th>ABOUT</th>
+                    </tr>
+                    <tr>
+                        <td><a href="">Contact Us</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">About Us</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Careers</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Flipkart Stories</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Press</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Flipkart Wholesale</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Cleartrip</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Corporate Information</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="inner-footer2 inner-footerb">
+                <table>
+                    <tr>
+                        <th>HELP</th>
+                    </tr>
+                    <tr>
+                        <td><a href="">Payments</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Shipping</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Cancellation & Returns</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">FAQ</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Report Infringement</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="inner-footer2 inner-footerc">
+                <table>
+                    <tr>
+                        <th>CONSUMER POLICY</th>
+                    </tr>
+                    <tr>
+                        <td><a href="">Cancellation & Returns</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Terms Of Use</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Security</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Privacy</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Sitemap</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Grievance Redressal</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">EPR Compliance</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="inner-footer2 inner-footerd">
+                <table>
+                    <tr>
+                        <th>SOCIAL</th>
+                    </tr>
+                    <tr>
+                        <td><a href="">Facebook</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Twitter</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Youtube</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="inner-footer2 inner-footere footer2-address">
+                <table>
+                    <tr>
+                        <th>Registered Office Address:</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Flipkart Internet Private Limited, <br>Buildings Alyssa, Begonia & <br>Clove Embassy
+                                Tech
+                                Village, <br>Outer Ring Road, Devarabeesanahalli Village, <br>Bengaluru, 560103,
+                                <br>Karnataka, India
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="inner-footer2 inner-footerf">
+                <table>
+                    <tr>
+                        <th>Registered Office Address:</th>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <p>Flipkart Internet Private Limited, <br>Buildings Alyssa, Begonia & <br>Clove Embassy
+                                Tech
+                                Village, <br>Outer Ring Road, Devarabeesanahalli Village, <br>Bengaluru, 560103,
+                                <br>Karnataka, India <br>CIN: U51109KA2012PTC066107 <br>Telephone: <a
+                                    href="">044-45614700</a>
+                            </p>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="footer3">
+            <div class="inner-footer3 inner-footer3a">
+                <i class="fa-building fa-solid"></i>
+                <a href=""><span>Become a Seller</span></a>
+            </div>
+            <div class="inner-footer3 inner-footer3b">
+                <i class="fa-solid fa-rocket"></i>
+                <a href=""><span>Advertise</span></a>
+            </div>
+            <div class="inner-footer3 inner-footer3c">
+                <i class="fa-solid fa-gift"></i>
+                <a href=""><Span>Gift Cards</Span></a>
+            </div>
+            <div class="inner-footer3 inner-footer3d">
+                <i class="fa-regular fa-circle-question"></i>
+                <a href=""><span>Help Center</span></a>
+            </div>
+            <div class="inner-footer3 inner-footer3e">
+                <span>&#169 2007-2023 Flipkart.com</span>
+            </div>
+            <div class="inner-footer3 inner-footer3f">
+                <img src="../../images/pay1.svg" alt="">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

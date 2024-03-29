@@ -3,9 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    overflow-y: scroll;
-}
 body::-webkit-scrollbar{
     display: none;
 }
@@ -129,6 +126,9 @@ font-weight: 500;
     padding: 0.5rem 1rem 0.5rem;
     border-bottom: 1px solid #f0f0f0;
 }
+.account-hover div:hover{
+    background-color: #f9f9f9;
+}
 .cart{
     padding: 0rem 1.25rem;
     font-size: 1rem;
@@ -178,6 +178,9 @@ cursor: pointer;
 .menu-hover div{
     padding: 0.5rem 1rem 0.5rem;
     border-bottom: 1px solid #f0f0f0;
+}
+.menu-hover div:hover{
+    background-color: #f9f9f9;
 }
 .menu-hover a{
     color: #212121;
@@ -240,13 +243,14 @@ cursor: pointer;
     width: 20%;
     padding: 1rem;
     line-height: 1.5rem;
-    color: #878787;
 }
 .panel-anchor-head{
     color: #000000;
+    font-weight: 600;
 }
 .panel-anchor-subhead{
     color: #878787;
+    font-weight: 200;
 }
 .inner-popup a{
     text-decoration: none;
@@ -261,20 +265,98 @@ background-color: #f9f9f9;
 .inner-popup ul i{
     font-size: 0.75rem;
 }
-
-
-
-
-
-
-
-
-
-
-
 main{
-    height: 1000px;
-    background-color: red;
+    position: relative;
+    top: 56px;
+}
+.outer-main-container{
+    padding: 1rem 0.5rem 1.5rem;
+    background-color: #f1f3f6;
+}
+.outer-main-container h1{
+  font-size: 1.125rem;
+  color: #212121;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 550;
+  padding-bottom: 0.5rem;
+}
+.main-container{
+display: grid;
+background-color: #ffffff;
+grid-template-columns: 100%;
+grid-template-rows: repeat(4,auto);
+grid-template-areas: 
+"brand"
+"mobile"
+"electronic"
+"offers"
+;
+}
+.brand{
+    grid-area: brand;
+    display: flex;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+.brand-btn{
+    position: absolute;
+    height: 90px;
+    width: 40px;
+    margin: 3rem 0;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 0.25rem;
+}
+.brand-btn-right{
+    right: 0.5rem;
+}
+.outer-brand{
+    height: 170px;
+    width: 198px;
+    padding: 0 1.5rem;
+    flex-shrink: 0;
+    text-align: center;
+}
+.outer-brand a{
+    font-size: 1rem ;
+    text-decoration: none;
+    color: #212121;
+    font-weight: 700;
+}
+.inner-brand{
+    margin: 1.5rem 0 1rem;
+}
+.inner-brand img{
+    height: 100px;
+    width: 150px;
+}
+.mobile{
+    grid-area: mobile;
+}
+.upper-mobile{
+    padding: 1rem 1.25rem;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.upper-mobile h2{
+    font-size: 1.375rem;
+    color: #212121;
+}
+.upper-mobile h3{
+    font-size: 0.875rem;
+    color: #b2b2b2;
+}
+.upper-mobile-btn{
+    background-color: #2874f0;
+    padding: 0.625rem 1.25rem;
+    border: none;
+    position: absolute;
+    right:1.75rem;
+}
+.upper-mobile-btn a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.875rem;
 }
 
 
@@ -291,6 +373,8 @@ main{
 
 
 footer{
+    position: relative;
+    top: 56px;
     display: grid;
     grid-template-areas: 
     "footer1"
